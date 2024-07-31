@@ -10,8 +10,8 @@ public class Dialogue : MonoBehaviour
     public string[] lines;
     public float textSpeed;
     public Button[] choiceButtons;
-    public int[] choiceIndices; // Add this array to specify choice points
-    public int targetIndex; // Add this public integer to set the target index in the Inspector
+    public int[] choiceIndices; // Array to specify choice points
+    public int targetIndex; // Public integer to set the target index in the Inspector
 
     private int index;
     private bool isChoicePoint;
@@ -21,18 +21,13 @@ public class Dialogue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        textComponent.text = string.Empty;
-        foreach (Button button in choiceButtons)
-        {
-            button.gameObject.SetActive(false);
-        }
-        StartDialogue();
+        ResetDialogue();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !isChoicePoint && !isTyping)
+        if ((Input.GetKeyDown(KeyCode.J) || Input.GetMouseButtonDown(0)) && !isChoicePoint && !isTyping)
         {
             if (textComponent.text == lines[index])
             {
@@ -42,6 +37,7 @@ public class Dialogue : MonoBehaviour
             {
                 StopAllCoroutines();
                 textComponent.text = lines[index];
+                isTyping = false;
             }
         }
     }
@@ -52,12 +48,14 @@ public class Dialogue : MonoBehaviour
         isChoicePoint = false;
         choiceMade = false;
         isTyping = false;
+        textComponent.text = string.Empty;
         StartCoroutine(TypeLine());
     }
 
     IEnumerator TypeLine()
     {
         isTyping = true;
+        textComponent.text = string.Empty; // Ensure text is cleared before typing
         foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;
@@ -80,12 +78,12 @@ public class Dialogue : MonoBehaviour
             {
                 index++;
             }
-            textComponent.text = string.Empty;
             StartCoroutine(TypeLine());
         }
         else
         {
             gameObject.SetActive(false);
+            ResetDialogue(); // Reset dialogue after it finishes
         }
     }
 
@@ -115,12 +113,24 @@ public class Dialogue : MonoBehaviour
 
         // Adjust the dialogue index based on player choice
         index = choiceIndex;
-        textComponent.text = string.Empty;
         isChoicePoint = false;
         isTyping = false;
         StartCoroutine(TypeLine());
 
         // Set the flag to indicate a choice was made
         choiceMade = true;
+    }
+
+    public void ResetDialogue()
+    {
+        index = 0;
+        isChoicePoint = false;
+        choiceMade = false;
+        isTyping = false;
+        textComponent.text = string.Empty;
+        foreach (Button button in choiceButtons)
+        {
+            button.gameObject.SetActive(false);
+        }
     }
 }
