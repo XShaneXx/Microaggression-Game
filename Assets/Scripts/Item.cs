@@ -5,8 +5,7 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     public GameObject dialoguePanel; // Reference to the dialogue panel
-    public static bool hasInteractedWithItem = false; // Static flag to track interaction
-
+    public int itemID; // Unique ID for each item
     private bool isPlayerInRange; // Flag to check if player is within the collider
 
     // Start is called before the first frame update
@@ -21,7 +20,7 @@ public class Item : MonoBehaviour
         if (isPlayerInRange && Input.GetKeyDown(KeyCode.J))
         {
             dialoguePanel.SetActive(true); // Activate the dialogue panel
-            hasInteractedWithItem = true; // Set the flag to true when the player interacts with the item
+            DialogueWithUnlockChoice.RegisterItemInteraction(itemID); // Register that this item has been interacted with
         }
     }
 

@@ -1429,6 +1429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 1085778026}
+  itemID: 0
 --- !u!1 &867201931
 GameObject:
   m_ObjectHideFlags: 0
@@ -1531,6 +1532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 638757854}
+  itemID: 1
 --- !u!50 &891709052
 Rigidbody2D:
   serializedVersion: 4

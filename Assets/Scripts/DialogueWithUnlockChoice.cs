@@ -18,6 +18,8 @@ public class DialogueWithUnlockChoice : MonoBehaviour
     private bool choiceMade; // Flag to indicate if a choice was made
     private bool isTyping; // Flag to indicate if text is being typed
 
+    public static List<int> interactedItems = new List<int>(); // Static list to track interacted items
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,12 +52,6 @@ public class DialogueWithUnlockChoice : MonoBehaviour
         isTyping = false;
         textComponent.text = string.Empty;
 
-        // If the player has interacted with the item, unlock the choice
-        if (Item.hasInteractedWithItem)
-        {
-            UnlockChoice(0); // Unlock the first choice (index 0)
-        }
-
         StartCoroutine(TypeLine());
     }
 
@@ -74,10 +70,10 @@ public class DialogueWithUnlockChoice : MonoBehaviour
 
     void NextLine()
     {
-        // If no choices are unlocked and we're at the first line, end the dialogue
-        if (index == 0 && !Item.hasInteractedWithItem)
+        // If no items have been interacted with, only allow the first line to be shown
+        if (index == 0 && interactedItems.Count == 0)
         {
-            EndDialogue();
+            EndDialogue(); // End the dialogue if no items have been interacted with
             return;
         }
 
@@ -119,7 +115,8 @@ public class DialogueWithUnlockChoice : MonoBehaviour
     {
         for (int i = 0; i < choiceButtons.Length; i++)
         {
-            if (Item.hasInteractedWithItem) // Only show choices if the item was interacted with
+            // Display choice buttons only if the corresponding item has been interacted with
+            if (interactedItems.Contains(i))
             {
                 choiceButtons[i].gameObject.SetActive(true);
             }
@@ -131,6 +128,14 @@ public class DialogueWithUnlockChoice : MonoBehaviour
         if (choiceIndex >= 0 && choiceIndex < choiceButtons.Length)
         {
             choiceButtons[choiceIndex].gameObject.SetActive(true); // Unlock and show the specific choice
+        }
+    }
+
+    public static void RegisterItemInteraction(int itemID)
+    {
+        if (!interactedItems.Contains(itemID))
+        {
+            interactedItems.Add(itemID); // Add the item ID to the list if not already added
         }
     }
 
