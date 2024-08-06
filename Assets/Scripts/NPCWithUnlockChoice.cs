@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC : MonoBehaviour
+public class NPCWithUnlockChoice : MonoBehaviour
 {
     public GameObject dialoguePanel; // Reference to the dialogue panel
-    private Dialogue dialogueScript; // Reference to the Dialogue script
+    private DialogueWithUnlockChoice dialogueScriptWithUC; // Reference to the Dialogue script
     private bool isPlayerInRange; // Flag to check if player is within the collider
 
     // Start is called before the first frame update
     void Start()
     {
         isPlayerInRange = false;
-        dialogueScript = dialoguePanel.GetComponent<Dialogue>(); // Get the Dialogue script component
+        dialogueScriptWithUC = dialoguePanel.GetComponent<DialogueWithUnlockChoice>(); // Get the Dialogue script component
     }
 
     // Update is called once per frame
@@ -38,7 +38,7 @@ public class NPC : MonoBehaviour
         {
             isPlayerInRange = false; // Reset the flag when player exits the collider
             dialoguePanel.SetActive(false); // Deactivate the dialogue panel when player leaves
-            dialogueScript.ResetDialogue(); // Reset the dialogue to the first line
+            dialogueScriptWithUC.ResetDialogue(); // Reset the dialogue to the first line
         }
     }
 }

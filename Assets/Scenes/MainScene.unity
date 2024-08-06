@@ -1005,10 +1005,10 @@ GameObject:
   - component: {fileID: 689454505}
   - component: {fileID: 689454504}
   - component: {fileID: 689454503}
-  - component: {fileID: 689454502}
   - component: {fileID: 689454501}
+  - component: {fileID: 689454507}
   m_Layer: 0
-  m_Name: NPC(test) (1)
+  m_Name: 'NPC(ChoiceTest) '
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1059,19 +1059,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
---- !u!114 &689454502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 689454500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56b96da33cadf704489b432f56d3424b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 1496988050}
 --- !u!50 &689454503
 Rigidbody2D:
   serializedVersion: 4
@@ -1211,6 +1198,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &689454507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689454500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c9666b3268c10479f9a4863cc286f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 1496988050}
 --- !u!1 &776106742
 GameObject:
   m_ObjectHideFlags: 0
@@ -2716,7 +2716,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1788243089}
   lines:
-  - Please don't bother me..
+  - Please don't bother me.
   - What it is?
   - Oh...Water? Thanks.
   - Oh...Coke? Thanks!
@@ -3097,7 +3097,7 @@ GameObject:
   - component: {fileID: 1807662209}
   - component: {fileID: 1807662210}
   m_Layer: 0
-  m_Name: NPC(test)
+  m_Name: NPC(DialogueTest)
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -7,11 +7,13 @@ public class Item : MonoBehaviour
     public GameObject dialoguePanel; // Reference to the dialogue panel
     public int itemID; // Unique ID for each item
     private bool isPlayerInRange; // Flag to check if player is within the collider
+    private Dialogue dialogueScript; // Reference to the DialogueWithUnlockChoice script
 
     // Start is called before the first frame update
     void Start()
     {
         isPlayerInRange = false;
+        dialogueScript = dialoguePanel.GetComponent<Dialogue>(); // Get the DialogueWithUnlockChoice script component
     }
 
     // Update is called once per frame
@@ -38,6 +40,7 @@ public class Item : MonoBehaviour
         {
             isPlayerInRange = false; // Reset the flag when player exits the collider
             dialoguePanel.SetActive(false); // Deactivate the dialogue panel when player leaves
+            dialogueScript.ResetDialogue(); // Reset the dialogue to the first line
         }
     }
 }
