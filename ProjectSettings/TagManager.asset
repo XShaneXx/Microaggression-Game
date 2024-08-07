@@ -51,10 +51,13 @@ TagManager:
   - name: Walls
     uniqueID: 736898149
     locked: 0
-  - name: HoptialItem
+  - name: NPCBehindHosptialItem
+    uniqueID: 603600127
+    locked: 0
+  - name: HosptialItem
     uniqueID: 1571585855
     locked: 0
-  - name: HoptialItemm
+  - name: HosptialItemm
     uniqueID: 4099681155
     locked: 0
   - name: Others

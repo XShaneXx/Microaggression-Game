@@ -9,6 +9,10 @@ public class Player : MonoBehaviour
     private Vector2 moveInput;
     private Vector2 moveVelocity;
 
+    public Animator animator;
+    private float lrMoveIndex;
+    private float udMoveIndex;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +25,16 @@ public class Player : MonoBehaviour
         // Get input from WASD keys
         moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         moveVelocity = moveInput.normalized * speed;
+
+        // Animation
+        lrMoveIndex = Input.GetAxisRaw("Horizontal");
+        udMoveIndex = Input.GetAxisRaw("Vertical");
+
+        animator.SetFloat("leftSpeed", moveVelocity.magnitude * lrMoveIndex);
+        animator.SetFloat("rightSpeed", moveVelocity.magnitude * lrMoveIndex);
+        animator.SetFloat("upSpeed", moveVelocity.magnitude * udMoveIndex);
+        animator.SetFloat("downSpeed", moveVelocity.magnitude * udMoveIndex);
+
     }
 
     // FixedUpdate is called at a fixed interval
@@ -29,4 +43,6 @@ public class Player : MonoBehaviour
         // Move the player
         rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
     }
+
+
 }
