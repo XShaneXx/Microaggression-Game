@@ -54,6 +54,9 @@ TagManager:
   - name: HoptialItem
     uniqueID: 1571585855
     locked: 0
+  - name: HoptialItemm
+    uniqueID: 4099681155
+    locked: 0
   - name: Others
     uniqueID: 1973513831
     locked: 0
