@@ -51,6 +51,9 @@ TagManager:
   - name: Walls
     uniqueID: 736898149
     locked: 0
+  - name: HoptialItem
+    uniqueID: 1571585855
+    locked: 0
   - name: Others
     uniqueID: 1973513831
     locked: 0
