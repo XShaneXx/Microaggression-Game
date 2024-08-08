@@ -30,10 +30,13 @@ public class Player : MonoBehaviour
         lrMoveIndex = Input.GetAxisRaw("Horizontal");
         udMoveIndex = Input.GetAxisRaw("Vertical");
 
-        animator.SetFloat("leftSpeed", moveVelocity.magnitude * lrMoveIndex);
-        animator.SetFloat("rightSpeed", moveVelocity.magnitude * lrMoveIndex);
-        animator.SetFloat("upSpeed", moveVelocity.magnitude * udMoveIndex);
-        animator.SetFloat("downSpeed", moveVelocity.magnitude * udMoveIndex);
+        if(moveInput != Vector2.zero)
+        {
+            animator.SetFloat("Horizontal", lrMoveIndex);
+            animator.SetFloat("Vertical", udMoveIndex);
+        }
+
+        animator.SetFloat("Speed", moveVelocity.magnitude);
 
     }
 
