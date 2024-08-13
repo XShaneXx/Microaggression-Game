@@ -469,7 +469,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &33691834
 GameObject:
@@ -7114,7 +7114,7 @@ Transform:
   m_Children:
   - {fileID: 861269188}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &97537220
 GameObject:
@@ -7127,33 +7127,14 @@ GameObject:
   - component: {fileID: 97537224}
   - component: {fileID: 97537223}
   - component: {fileID: 97537222}
-  - component: {fileID: 97537221}
+  - component: {fileID: 97537225}
   m_Layer: 5
-  m_Name: Item-Computer
+  m_Name: Item-TCComputer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &97537221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 97537220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edd2788b59aadd14ebf7d2432b406593, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textComponent: {fileID: 341786017}
-  lines:
-  - I don't need use computer right now.
-  textSpeed: 0.05
-  choiceButtons: []
-  choiceIndices: 
-  targetIndex: 0
 --- !u!114 &97537222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7200,19 +7181,42 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97537220}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.12965025}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 341786019}
-  m_Father: {fileID: 783054562}
+  m_Father: {fileID: 362546410}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 963.5292, y: 160.9455}
-  m_SizeDelta: {x: 1920, y: 330}
+  m_AnchoredPosition: {x: 0, y: -375}
+  m_SizeDelta: {x: 0, y: -750}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &97537225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97537220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 824da026fc76cd44c87a312f72ba96cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 341786017}
+  lines:
+  - I don't need to use the computer right now.
+  - Oh wait! I could use the computer to translate.
+  - (Using the computer camera, you input the medication ingredients list into computer)
+  - The medication Mrs. Lee is taking is correct and helps her condition.
+  - I need to find Emma and talks about this.
+  textSpeed: 0.05
+  choiceButtons: []
+  choiceIndices: 
+  targetIndex: 0
 --- !u!1 &98631254
 GameObject:
   m_ObjectHideFlags: 0
@@ -10575,9 +10579,10 @@ RectTransform:
   - {fileID: 1315294707}
   - {fileID: 1660657002}
   - {fileID: 427497506}
+  - {fileID: 97537224}
   - {fileID: 783054562}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -11157,7 +11162,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &431087018
 GameObject:
@@ -11196,8 +11201,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 700, y: 67.26405}
-  m_SizeDelta: {x: 420, y: 115.4719}
+  m_AnchoredPosition: {x: 700, y: 80}
+  m_SizeDelta: {x: 450, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &431087020
 MonoBehaviour:
@@ -11345,7 +11350,7 @@ Transform:
   - {fileID: 660296293}
   - {fileID: 1846550911}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &485265260
 GameObject:
@@ -13482,7 +13487,7 @@ Transform:
   - {fileID: 925751853}
   - {fileID: 1601313233}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &653857969
 GameObject:
@@ -15321,7 +15326,7 @@ GameObject:
   - component: {fileID: 776106743}
   - component: {fileID: 776106748}
   m_Layer: 0
-  m_Name: HerbalMedicne
+  m_Name: VM-Water
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15386,7 +15391,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.80171025, y: 0.18279219}
+  m_Offset: {x: 0.20537674, y: -0.28639233}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -15397,7 +15402,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0207555, y: 1.0909619}
+  m_Size: {x: 3.0349295, y: 2.0293307}
   m_EdgeRadius: 0
 --- !u!61 &776106745
 BoxCollider2D:
@@ -15431,7 +15436,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.5700437, y: 0.3463178}
+  m_Offset: {x: 0.16453552, y: 0.0903988}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -15442,7 +15447,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.84006286, y: 0.3073644}
+  m_Size: {x: 2.3092217, y: 0.8192024}
   m_EdgeRadius: 0
 --- !u!212 &776106746
 SpriteRenderer:
@@ -15504,7 +15509,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 776106742}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.056, y: -11.966, z: 0.104422234}
+  m_LocalPosition: {x: -3.807, y: 0.394, z: 0.104422234}
   m_LocalScale: {x: 0.4, y: 1, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15520,11 +15525,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 776106742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 138721c85c966a446a83f1e3cf0e8b55, type: 3}
+  m_Script: {fileID: 11500000, guid: 56b96da33cadf704489b432f56d3424b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 1085778026}
-  itemID: 0
 --- !u!1 &783054561
 GameObject:
   m_ObjectHideFlags: 0
@@ -15562,7 +15566,6 @@ Transform:
   - {fileID: 1613438257}
   - {fileID: 1270033969}
   - {fileID: 736180748}
-  - {fileID: 97537224}
   - {fileID: 113928987}
   - {fileID: 1213489280}
   - {fileID: 1657474866}
@@ -56809,7 +56812,7 @@ Transform:
   - {fileID: 1795025238}
   - {fileID: 1600252953}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1026082631
 GameObject:
@@ -57203,7 +57206,7 @@ Transform:
   - {fileID: 1991641315}
   - {fileID: 238118241}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1083367840
 GameObject:
@@ -57353,7 +57356,7 @@ GameObject:
   - component: {fileID: 1085778029}
   - component: {fileID: 1085778028}
   m_Layer: 5
-  m_Name: Item-HerbalMedicne
+  m_Name: Item-WaterVM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57394,7 +57397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1225163298}
   lines:
-  - (Mrs. Lee's traditional Chinese herbal medicine)
+  - A water-selling vending machine
   textSpeed: 0.05
   choiceButtons: []
   choiceIndices: 
@@ -57630,7 +57633,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Here! Have some water.
+  m_text: "(Bring out the problem on Mrs. Lee\u2018s medication)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -58457,7 +58460,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1173589195
 Transform:
   m_ObjectHideFlags: 0
@@ -58471,7 +58474,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1293121086}
-  - {fileID: 1679933328}
   m_Father: {fileID: 1011320445}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -60441,7 +60443,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1355743251
 GameObject:
@@ -60453,7 +60455,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1355743257}
   - component: {fileID: 1355743256}
-  - component: {fileID: 1355743255}
+  - component: {fileID: 1355743258}
   - component: {fileID: 1355743254}
   - component: {fileID: 1355743253}
   - component: {fileID: 1355743252}
@@ -60463,7 +60465,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!50 &1355743252
 Rigidbody2D:
   serializedVersion: 4
@@ -60581,19 +60583,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5503295, y: 1.0328197}
   m_EdgeRadius: 0
---- !u!114 &1355743255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1355743251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56b96da33cadf704489b432f56d3424b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 1382235145}
 --- !u!212 &1355743256
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -60661,6 +60650,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1355743258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355743251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b91191d0570a24e861b15bb081e462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 1382235145}
 --- !u!1 &1382235145
 GameObject:
   m_ObjectHideFlags: 0
@@ -60674,7 +60676,7 @@ GameObject:
   - component: {fileID: 1382235148}
   - component: {fileID: 1382235147}
   m_Layer: 5
-  m_Name: Item-VMWater
+  m_Name: Item-HerbalMedicne
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60715,7 +60717,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2066412295}
   lines:
-  - Make the "Invisible" Visible Option Unlock
+  - (Mrs. Lee's Traditional Herbal Medicine)
+  - (The ingredients of the medicine are written on the back of the medicine bottle)
+  - (But it's in another language, you can't understand it)
+  - (You took a photo of the ingredient list)
+  - I must find a way to translate it so that it can help Mrs. Lee's treatment.
   textSpeed: 0.05
   choiceButtons: []
   choiceIndices: 
@@ -61413,7 +61419,7 @@ Transform:
   m_Children:
   - {fileID: 33691835}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1496957096
 GameObject:
@@ -61616,10 +61622,17 @@ MonoBehaviour:
   lines:
   - '[Emma] Why are some patients unwilling to follow medical advice and trust some
     unscience?'
-  - What it is?
-  - Oh...Water? Thanks.
+  - Emma, I need to talk to you..
+  - The medication Mrs. Lee is taking is helping her.
   - Oh...Coke? Thanks!
-  - That do feels better
+  - Also, your words and attitude toward the patient were not right.
+  - This kind of disrespect for other's culture is a manifestation of microaggression.
+  - '[Emma] I..I am sorry..I just.I just..'
+  - This can cause serious problems.
+  - Such as lack of trust in our work or lack of cooperation with our treatment of
+    her.
+  - '[Emma] I..I got it..sorry...'
+  - Mrs. Lee deserves an apology from you.
   textSpeed: 0.05
   choiceButtons:
   - {fileID: 431087020}
@@ -62049,7 +62062,7 @@ Transform:
   - {fileID: 1755320885}
   - {fileID: 358999473}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1582683806
 GameObject:
@@ -62434,7 +62447,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1600252952}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.08, y: 7.6, z: 0.002775711}
+  m_LocalPosition: {x: -12.36, y: 7.63, z: 0.002775711}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -62632,7 +62645,7 @@ SpriteRenderer:
   m_SortingLayerID: 603600127
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -460425491, guid: 4ca3ac691d268e64ea5c49a5b424d553, type: 3}
+  m_Sprite: {fileID: 1686736607, guid: 3ade32e49b7435449aaa8eb20addcda3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -63521,12 +63534,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1679933328}
   - component: {fileID: 1679933333}
-  - component: {fileID: 1679933332}
+  - component: {fileID: 1679933334}
   - component: {fileID: 1679933331}
   - component: {fileID: 1679933330}
   - component: {fileID: 1679933329}
   m_Layer: 0
-  m_Name: Computer (2)
+  m_Name: Translator_Computer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63540,12 +63553,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1679933327}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.546, y: -6.799, z: -0.36774954}
+  m_LocalPosition: {x: -1.6603112, y: -2.9643998, z: 0}
   m_LocalScale: {x: 0.73486304, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1173589195}
-  m_RootOrder: -1
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1679933329
 Rigidbody2D:
@@ -63664,19 +63677,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9764789, y: 0.86652803}
   m_EdgeRadius: 0
---- !u!114 &1679933332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1679933327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56b96da33cadf704489b432f56d3424b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 97537220}
 --- !u!212 &1679933333
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -63729,6 +63729,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1679933334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679933327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbccd0a748888e643ad4d97d4602db1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 97537220}
+  itemID: 0
 --- !u!1 &1721961296
 GameObject:
   m_ObjectHideFlags: 0
@@ -71353,8 +71367,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 700, y: -67.26405}
-  m_SizeDelta: {x: 420, y: 115.4719}
+  m_AnchoredPosition: {x: 700, y: -80}
+  m_SizeDelta: {x: 450, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2074663838
 MonoBehaviour:
@@ -71796,7 +71810,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2138134634
 GameObject:
@@ -71829,5 +71843,5 @@ Transform:
   - {fileID: 1617044337}
   - {fileID: 193726056}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
