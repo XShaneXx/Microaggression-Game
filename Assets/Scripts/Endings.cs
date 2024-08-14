@@ -54,4 +54,50 @@ public class Endings : MonoBehaviour
         // Deactivate the dialogue panel
         endingMIVDialogue.SetActive(false);
     }
+
+    public void EndingDM()
+    {
+        // Start the coroutine to display the ending dialogue
+        StartCoroutine(DisplayEndingDM());
+
+        StorylineState.endingDM = true;
+    }
+
+    private IEnumerator DisplayEndingDM()
+    {
+        // Activate the dialogue panel
+        endingMIVDialogue.SetActive(true);
+
+        // Set the text to the desired message
+        dialogueText.text = "Ending 2/4 - Disarm the Microaggression";
+
+        // Wait for 5 seconds
+        yield return new WaitForSeconds(5f);
+
+        // Deactivate the dialogue panel
+        endingMIVDialogue.SetActive(false);
+    }
+
+    public void EndingSEI()
+    {
+        // Start the coroutine to display the ending dialogue
+        StartCoroutine(DisplayEndingSEI());
+
+        StorylineState.endingSEI = true;
+    }
+
+    private IEnumerator DisplayEndingSEI()
+    {
+        // Activate the dialogue panel
+        endingMIVDialogue.SetActive(true);
+
+        // Set the text to the desired message
+        dialogueText.text = "Ending 4/4 - Seek External Intervention";
+
+        // Wait for 5 seconds
+        yield return new WaitForSeconds(5f);
+
+        // Deactivate the dialogue panel
+        endingMIVDialogue.SetActive(false);
+    }
 }
