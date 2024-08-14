@@ -22,6 +22,7 @@ public class Item : MonoBehaviour
         if (isPlayerInRange && Input.GetKeyDown(KeyCode.J))
         {
             dialoguePanel.SetActive(true); // Activate the dialogue panel
+            StorylineState.hasCheckedDEIPoster = true;
             DialogueWithUnlockChoice.RegisterItemInteraction(itemID); // Register that this item has been interacted with
         }
     }
