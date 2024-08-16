@@ -5,12 +5,14 @@ using UnityEngine;
 public class PhoneNumberNote : MonoBehaviour
 {
     public GameObject dialoguePanel; // Reference to the dialogue panel
+    private Dialogue dialogueScript;
     private bool isPlayerInRange; // Flag to check if player is within the collider
 
     // Start is called before the first frame update
     void Start()
     {
         isPlayerInRange = false;
+        dialogueScript = dialoguePanel.GetComponent<Dialogue>();
     }
 
     // Update is called once per frame
@@ -37,6 +39,7 @@ public class PhoneNumberNote : MonoBehaviour
         {
             isPlayerInRange = false; // Reset the flag when player exits the collider
             dialoguePanel.SetActive(false); // Deactivate the dialogue panel when player leaves
+            dialogueScript.ResetDialogue();
         }
     }
 }

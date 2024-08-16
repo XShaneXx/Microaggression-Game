@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HostipalManual : MonoBehaviour
+public class DreamExit : MonoBehaviour
 {
-     public GameObject dialoguePanel; // Reference to the dialogue panel
-     private Dialogue dialogueScript;
+    public GameObject dialoguePanel; // Reference to the dialogue panel
+    private DreamExitDialogue dialogueScript;
     private bool isPlayerInRange; // Flag to check if player is within the collider
 
     // Start is called before the first frame update
     void Start()
     {
         isPlayerInRange = false;
-        dialogueScript = dialoguePanel.GetComponent<Dialogue>();
+        dialogueScript = dialoguePanel.GetComponent<DreamExitDialogue>();
     }
 
     // Update is called once per frame
@@ -21,7 +21,6 @@ public class HostipalManual : MonoBehaviour
         if (isPlayerInRange && Input.GetKeyDown(KeyCode.J))
         {
             dialoguePanel.SetActive(true); // Activate the dialogue panel
-            StorylineState.hasCheckedManual = true; // Set the flag indicating the player checked the medical bottle
         }
     }
 
