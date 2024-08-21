@@ -13,6 +13,8 @@ public class testPlayer : MonoBehaviour
     private float lrMoveIndex;
     private float udMoveIndex;
 
+    public GameObject[] uiPanels;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,15 @@ public class testPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Check if any UI panel is active
+        if (IsAnyPanelActive())
+        {
+            // If a panel is active, don't allow movement
+            moveVelocity = Vector2.zero;
+            animator.SetFloat("Speed", 0f);
+            return;
+        }
+
         // Get input from WASD keys
         moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         moveVelocity = moveInput.normalized * speed;
@@ -45,5 +56,17 @@ public class testPlayer : MonoBehaviour
     {
         // Move the player
         rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
+    }
+
+    private bool IsAnyPanelActive()
+    {
+        foreach (GameObject panel in uiPanels)
+        {
+            if (panel.activeInHierarchy)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }
