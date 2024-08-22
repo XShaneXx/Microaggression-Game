@@ -22,6 +22,16 @@ public class OpeningControl : MonoBehaviour
     private Vector3 nurseFirstTarget = new Vector3(-5.5f, 1.2f, 0f); // First target position for the nurse
     private Vector3 nurseSecondTarget = new Vector3(-5.5f, -7f, 0f); // Second target position for the nurse
 
+    public GameObject doctor; // Reference to the doctor character
+    public float doctorAnimationDelay = 35f;
+    private Animator doctorAnimator; // Reference to the doctor's animator
+    private bool doctorReachedFirstTarget = false; // Flag to check if the doctor has reached the first target
+
+    private Vector3 doctorFirstTarget = new Vector3(-5.5f, 1.2f, 0f); // First target position for the doctor
+    private Vector3 doctorSecondTarget = new Vector3(-5.5f, 11f, 0f); // Second target position for the doctor
+
+    public GameObject doctorDialogue;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,8 +45,18 @@ public class OpeningControl : MonoBehaviour
             nurseAnimator = nurse.GetComponent<Animator>(); // Get the Animator component attached to the nurse
         }
 
+        nurseAnimator.SetFloat("Horizontal", -1f);
+
+        if (doctor != null)
+        {
+            doctorAnimator = doctor.GetComponent<Animator>(); // Get the Animator component attached to the doctor
+        }
+
         // Start the nurse's movement after a 10-second delay
         StartCoroutine(StartNurseMovement());
+
+        // Start the doctor's movement after a 35-second delay
+        StartCoroutine(StartDoctorMovement());
     }
 
     // Update is called once per frame
@@ -107,6 +127,50 @@ public class OpeningControl : MonoBehaviour
             {
                 nurseMovingToFirstTarget = true; // Mark the movement as completed
                 nurseAnimator.SetFloat("Speed", 0f); // Stop the nurse's walking animation
+            }
+
+            yield return null;
+        }
+    }
+
+    IEnumerator StartDoctorMovement()
+    {
+        yield return new WaitForSeconds(doctorAnimationDelay); // Wait for 35 seconds
+
+        doctorDialogue.SetActive(true);
+
+        // Move the doctor towards the first target position
+        while (!doctorReachedFirstTarget)
+        {
+            doctor.transform.position = Vector3.MoveTowards(doctor.transform.position, doctorFirstTarget, speed * Time.deltaTime);
+
+            // Set doctor's animation to walk up (assuming up is `Vertical` direction)
+            doctorAnimator.SetFloat("Vertical", 1f);
+            doctorAnimator.SetFloat("Speed", 1f);
+
+            if (Vector3.Distance(doctor.transform.position, doctorFirstTarget) < 0.1f)
+            {
+                doctorReachedFirstTarget = true;
+                doctorAnimator.SetFloat("Speed", 0f); // Stop the doctor for 5 seconds
+                yield return new WaitForSeconds(5f); // Wait for 5 seconds at the first target
+            }
+
+            yield return null;
+        }
+
+        // Move the doctor towards the second target position
+        while (doctorReachedFirstTarget)
+        {
+            doctor.transform.position = Vector3.MoveTowards(doctor.transform.position, doctorSecondTarget, speed * Time.deltaTime);
+
+            // Keep doctor's animation to walk up
+            doctorAnimator.SetFloat("Vertical", 1f);
+            doctorAnimator.SetFloat("Speed", 1f);
+
+            if (Vector3.Distance(doctor.transform.position, doctorSecondTarget) < 0.1f)
+            {
+                doctorAnimator.SetFloat("Speed", 0f); // Stop the doctor's walking animation
+                doctorReachedFirstTarget = false; // Mark the movement as completed
             }
 
             yield return null;
