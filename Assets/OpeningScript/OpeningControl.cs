@@ -1,65 +1,66 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class OpeningControl : MonoBehaviour
 {
-    public GameObject player; // Reference to the player character
-    public float speed = 2f; // Speed of the player movement
-    private Animator playerAnimator; // Reference to the player's animator
+    public GameObject player;
+    public float speed = 2f;
+    private Animator playerAnimator;
 
-    private Vector3 targetPosition = new Vector3(-6.43f, 2.15f, 0f); // Target position for the player
-    private bool hasReachedTarget = false; // Flag to check if the player has reached the target
+    private Vector3 targetPosition = new Vector3(-6.43f, 2.15f, 0f);
+    private bool hasReachedTarget = false;
 
-    public GameObject dialogueOne; // Reference to the dialogueOne GameObject
+    public GameObject dialogueOne;
 
-    public GameObject nurse; // Reference to the nurse character
+    public GameObject nurse;
     public float nurseAnimationDelay = 10f;
-    private Animator nurseAnimator; // Reference to the nurse's animator
-    private bool nurseMovingToFirstTarget = true; // Flag to control nurse's movement
-    private bool nurseReachedFirstTarget = false; // Flag to check if the nurse has reached the first target
+    private Animator nurseAnimator;
+    private bool nurseMovingToFirstTarget = true;
+    private bool nurseReachedFirstTarget = false;
 
-    private Vector3 nurseFirstTarget = new Vector3(-5.5f, 1.2f, 0f); // First target position for the nurse
-    private Vector3 nurseSecondTarget = new Vector3(-5.5f, -7f, 0f); // Second target position for the nurse
+    private Vector3 nurseFirstTarget = new Vector3(-5.5f, 1.2f, 0f);
+    private Vector3 nurseSecondTarget = new Vector3(-5.5f, -7f, 0f);
 
-    public GameObject doctor; // Reference to the doctor character
+    public GameObject doctor;
     public float doctorAnimationDelay = 35f;
-    private Animator doctorAnimator; // Reference to the doctor's animator
-    private bool doctorReachedFirstTarget = false; // Flag to check if the doctor has reached the first target
+    private Animator doctorAnimator;
+    private bool doctorReachedFirstTarget = false;
 
-    private Vector3 doctorFirstTarget = new Vector3(-5.5f, 1.2f, 0f); // First target position for the doctor
-    private Vector3 doctorSecondTarget = new Vector3(-5.5f, 11f, 0f); // Second target position for the doctor
+    private Vector3 doctorFirstTarget = new Vector3(-5.5f, 1.2f, 0f);
+    private Vector3 doctorSecondTarget = new Vector3(-5.5f, 11f, 0f);
 
     public GameObject doctorDialogue;
+    public GameObject blackScene;
+    public GameObject text1;
+    public GameObject text2;
 
-    // Start is called before the first frame update
     void Start()
     {
         if (player != null)
         {
-            playerAnimator = player.GetComponent<Animator>(); // Get the Animator component attached to the player
+            playerAnimator = player.GetComponent<Animator>();
         }
 
         if (nurse != null)
         {
-            nurseAnimator = nurse.GetComponent<Animator>(); // Get the Animator component attached to the nurse
+            nurseAnimator = nurse.GetComponent<Animator>();
+        }
+
+        if (doctor != null)
+        {
+            doctorAnimator = doctor.GetComponent<Animator>();
         }
 
         nurseAnimator.SetFloat("Horizontal", -1f);
 
-        if (doctor != null)
-        {
-            doctorAnimator = doctor.GetComponent<Animator>(); // Get the Animator component attached to the doctor
-        }
-
-        // Start the nurse's movement after a 10-second delay
         StartCoroutine(StartNurseMovement());
-
-        // Start the doctor's movement after a 35-second delay
         StartCoroutine(StartDoctorMovement());
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (!hasReachedTarget)
@@ -70,45 +71,37 @@ public class OpeningControl : MonoBehaviour
 
     void MovePlayerToTarget()
     {
-        // Move the player towards the target position
         player.transform.position = Vector3.MoveTowards(player.transform.position, targetPosition, speed * Time.deltaTime);
 
-        // Check if the player has reached the target position
         if (Vector3.Distance(player.transform.position, targetPosition) < 0.1f)
         {
             hasReachedTarget = true;
-            // Stop player movement and face left
             playerAnimator.SetFloat("Horizontal", -1f);
-            playerAnimator.SetFloat("Speed", 0f); // Stop walking animation
-
-            // Activate dialogueOne and update the flag
+            playerAnimator.SetFloat("Speed", 0f);
             dialogueOne.SetActive(true);
         }
         else
         {
-            // If the player is still moving, set the animation to walking vertically
-            playerAnimator.SetFloat("Horizontal", 0f); // Ensure the player walks vertically
-            playerAnimator.SetFloat("Speed", 1f); // Play walking animation
+            playerAnimator.SetFloat("Horizontal", 0f);
+            playerAnimator.SetFloat("Speed", 1f);
         }
     }
 
     IEnumerator StartNurseMovement()
     {
-        yield return new WaitForSeconds(nurseAnimationDelay); // Wait for 10 seconds
+        yield return new WaitForSeconds(nurseAnimationDelay);
 
         while (!nurseReachedFirstTarget)
         {
-            // Move the nurse towards the first target position
             nurse.transform.position = Vector3.MoveTowards(nurse.transform.position, nurseFirstTarget, speed * Time.deltaTime);
 
-            // Set nurse's animation to walk right
             nurseAnimator.SetFloat("Horizontal", 1f);
             nurseAnimator.SetFloat("Speed", 1f);
 
             if (Vector3.Distance(nurse.transform.position, nurseFirstTarget) < 0.1f)
             {
                 nurseReachedFirstTarget = true;
-                nurseMovingToFirstTarget = false; // Switch to moving to the second target
+                nurseMovingToFirstTarget = false;
             }
 
             yield return null;
@@ -116,17 +109,15 @@ public class OpeningControl : MonoBehaviour
 
         while (!nurseMovingToFirstTarget)
         {
-            // Move the nurse towards the second target position
             nurse.transform.position = Vector3.MoveTowards(nurse.transform.position, nurseSecondTarget, speed * Time.deltaTime);
 
-            // Keep nurse's animation to walk down (assuming down is `Vertical` direction)
             nurseAnimator.SetFloat("Horizontal", 0f);
             nurseAnimator.SetFloat("Speed", 1f);
 
             if (Vector3.Distance(nurse.transform.position, nurseSecondTarget) < 0.1f)
             {
-                nurseMovingToFirstTarget = true; // Mark the movement as completed
-                nurseAnimator.SetFloat("Speed", 0f); // Stop the nurse's walking animation
+                nurseMovingToFirstTarget = true;
+                nurseAnimator.SetFloat("Speed", 0f);
             }
 
             yield return null;
@@ -135,45 +126,79 @@ public class OpeningControl : MonoBehaviour
 
     IEnumerator StartDoctorMovement()
     {
-        yield return new WaitForSeconds(doctorAnimationDelay); // Wait for 35 seconds
+        yield return new WaitForSeconds(doctorAnimationDelay);
 
         doctorDialogue.SetActive(true);
 
-        // Move the doctor towards the first target position
         while (!doctorReachedFirstTarget)
         {
             doctor.transform.position = Vector3.MoveTowards(doctor.transform.position, doctorFirstTarget, speed * Time.deltaTime);
 
-            // Set doctor's animation to walk up (assuming up is `Vertical` direction)
             doctorAnimator.SetFloat("Vertical", 1f);
             doctorAnimator.SetFloat("Speed", 1f);
 
             if (Vector3.Distance(doctor.transform.position, doctorFirstTarget) < 0.1f)
             {
                 doctorReachedFirstTarget = true;
-                doctorAnimator.SetFloat("Speed", 0f); // Stop the doctor for 5 seconds
-                yield return new WaitForSeconds(5f); // Wait for 5 seconds at the first target
+                doctorAnimator.SetFloat("Speed", 0f);
+                yield return new WaitForSeconds(5f);
             }
 
             yield return null;
         }
 
-        // Move the doctor towards the second target position
         while (doctorReachedFirstTarget)
         {
             doctor.transform.position = Vector3.MoveTowards(doctor.transform.position, doctorSecondTarget, speed * Time.deltaTime);
 
-            // Keep doctor's animation to walk up
             doctorAnimator.SetFloat("Vertical", 1f);
             doctorAnimator.SetFloat("Speed", 1f);
 
             if (Vector3.Distance(doctor.transform.position, doctorSecondTarget) < 0.1f)
             {
-                doctorAnimator.SetFloat("Speed", 0f); // Stop the doctor's walking animation
-                doctorReachedFirstTarget = false; // Mark the movement as completed
+                doctorAnimator.SetFloat("Speed", 0f);
+                doctorReachedFirstTarget = false;
+                StartCoroutine(FadeInElements());
             }
 
             yield return null;
         }
+    }
+
+    IEnumerator FadeInElements()
+    {
+        blackScene.SetActive(true);
+        text1.SetActive(true);
+        text2.SetActive(true);
+
+        Image blackSceneImage = blackScene.GetComponent<Image>();
+        TextMeshProUGUI text1Component = text1.GetComponent<TextMeshProUGUI>();
+        TextMeshProUGUI text2Component = text2.GetComponent<TextMeshProUGUI>();
+
+        Color blackSceneColor = blackSceneImage.color;
+        Color text1Color = text1Component.color;
+        Color text2Color = text2Component.color;
+
+        float elapsedTime = 0f;
+        float duration = 3f;
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+
+            blackSceneColor.a = Mathf.Clamp01(elapsedTime / duration);
+            text1Color.a = Mathf.Clamp01(elapsedTime / duration);
+            text2Color.a = Mathf.Clamp01(elapsedTime / duration);
+
+            blackSceneImage.color = blackSceneColor;
+            text1Component.color = text1Color;
+            text2Component.color = text2Color;
+
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(10f);
+
+        SceneManager.LoadScene("MainScene");
     }
 }
