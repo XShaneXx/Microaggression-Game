@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
@@ -15,13 +16,21 @@ public class Player : MonoBehaviour
 
     public GameObject[] uiPanels;
     public GameObject pressJ;
+    public TextMeshProUGUI pressJText; // Reference to the TextMeshPro component
+
+    private string[] messages = new string[]
+    {
+        "Press 'J' for interaction and dialogue",
+        "NPCs and Items are available for interaction",
+        "Find all 4 solutions to help Mrs. Lee!"
+    };
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
 
-        // Start coroutine to disable pressJ after 3 seconds
-        StartCoroutine(DisablePressJAfterDelay());
+        // Start the coroutine to display messages
+        StartCoroutine(DisplayPressJMessages());
     }
 
     void Update()
@@ -33,7 +42,6 @@ public class Player : MonoBehaviour
             return;
         }
 
-        // Get input from WASD keys
         moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         moveVelocity = moveInput.normalized * speed;
 
@@ -66,10 +74,16 @@ public class Player : MonoBehaviour
         return false;
     }
 
-    // Coroutine to disable pressJ after 3 seconds
-    private IEnumerator DisablePressJAfterDelay()
+    // Coroutine to display each message sequentially
+    private IEnumerator DisplayPressJMessages()
     {
-        yield return new WaitForSeconds(3f);
-        pressJ.SetActive(false);
+        foreach (string message in messages)
+        {
+            pressJText.text = message;
+            pressJ.SetActive(true);
+            yield return new WaitForSeconds(3f); // Display each message for 3 seconds
+        }
+
+        pressJ.SetActive(false); // Disable the pressJ GameObject after displaying all messages
     }
 }

@@ -10,6 +10,9 @@ public class Endings : MonoBehaviour
     public TextMeshProUGUI dialogueText; // Reference to the TextMeshPro component
     public bool leavedream;
 
+    private int solutionsFound = 0; // Track the number of solutions found
+    private HashSet<string> solutionsCompleted = new HashSet<string>(); // Track completed solutions
+
     void Start()
     {
         leavedream = false;
@@ -39,93 +42,60 @@ public class Endings : MonoBehaviour
 
     public void EndingMIV()
     {
-        // Start the coroutine to display the ending dialogue
-        StartCoroutine(DisplayEndingMIV());
+        if (!solutionsCompleted.Contains("MIV"))
+        {
+            solutionsFound++;
+            solutionsCompleted.Add("MIV");
 
-        StorylineState.endingMIV = true;
-    }
-
-    private IEnumerator DisplayEndingMIV()
-    {
-        // Activate the dialogue panel
-        endingMIVDialogue.SetActive(true);
-
-        // Set the text to the desired message
-        dialogueText.text = "Solution 1/4 - Make the \"Invisible\" Visible";
-
-        // Wait for 5 seconds
-        yield return new WaitForSeconds(5f);
-
-        // Deactivate the dialogue panel
-        endingMIVDialogue.SetActive(false);
+            StartCoroutine(DisplayEnding(solutionsFound, "Make the \"Invisible\" Visible"));
+            StorylineState.endingMIV = true;
+        }
     }
 
     public void EndingEO()
     {
-        // Start the coroutine to display the ending dialogue
-        StartCoroutine(DisplayEndingEO());
+        if (!solutionsCompleted.Contains("EO"))
+        {
+            solutionsFound++;
+            solutionsCompleted.Add("EO");
 
-        StorylineState.endingEO = true;
-    }
-
-    private IEnumerator DisplayEndingEO()
-    {
-        // Activate the dialogue panel
-        endingMIVDialogue.SetActive(true);
-
-        // Set the text to the desired message
-        dialogueText.text = "Solution 3/4 - Educate the Offender";
-
-        // Wait for 5 seconds
-        yield return new WaitForSeconds(5f);
-
-        // Deactivate the dialogue panel
-        endingMIVDialogue.SetActive(false);
+            StartCoroutine(DisplayEnding(solutionsFound, "Educate the Offender"));
+            StorylineState.endingEO = true;
+        }
     }
 
     public void EndingDM()
     {
-        // Start the coroutine to display the ending dialogue
-        StartCoroutine(DisplayEndingDM());
+        if (!solutionsCompleted.Contains("DM"))
+        {
+            solutionsFound++;
+            solutionsCompleted.Add("DM");
 
-        StorylineState.endingDM = true;
-    }
-
-    private IEnumerator DisplayEndingDM()
-    {
-        // Activate the dialogue panel
-        endingMIVDialogue.SetActive(true);
-
-        // Set the text to the desired message
-        dialogueText.text = "Solution 2/4 - Disarm the Microaggression";
-
-        // Wait for 5 seconds
-        yield return new WaitForSeconds(5f);
-
-        // Deactivate the dialogue panel
-        endingMIVDialogue.SetActive(false);
+            StartCoroutine(DisplayEnding(solutionsFound, "Disarm the Microaggression"));
+            StorylineState.endingDM = true;
+        }
     }
 
     public void EndingSEI()
     {
-        // Start the coroutine to display the ending dialogue
-        StartCoroutine(DisplayEndingSEI());
+        if (!solutionsCompleted.Contains("SEI"))
+        {
+            solutionsFound++;
+            solutionsCompleted.Add("SEI");
 
-        StorylineState.endingSEI = true;
+            StartCoroutine(DisplayEnding(solutionsFound, "Seek External Intervention"));
+            StorylineState.endingSEI = true;
+        }
     }
 
-    private IEnumerator DisplayEndingSEI()
+    private IEnumerator DisplayEnding(int solutionNumber, string message)
     {
-        // Activate the dialogue panel
         endingMIVDialogue.SetActive(true);
 
-        // Set the text to the desired message
-        dialogueText.text = "Solution 4/4 - Seek External Intervention";
+        dialogueText.text = $"Solution {solutionNumber}/4 - {message}";
 
-        // Wait for 5 seconds
         yield return new WaitForSeconds(5f);
 
-        // Deactivate the dialogue panel
         endingMIVDialogue.SetActive(false);
     }
 }

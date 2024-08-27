@@ -6730,7 +6730,7 @@ MonoBehaviour:
     healing.
   - According to the manual, Dr.Frame's behavior to Mrs. Lee is absolutely unacceptable.
   - I need to talks to Dr.Frame about this
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
@@ -7045,7 +7045,7 @@ MonoBehaviour:
   textComponent: {fileID: 1875896995}
   lines:
   - The time doesn't seem running in here.
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
@@ -7229,7 +7229,7 @@ MonoBehaviour:
   - (Using the computer camera, you input the medication ingredients list into computer)
   - The medication Mrs. Lee is taking is correct and helps her condition.
   - I need to find Emma and talks about this.
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
@@ -7553,7 +7553,7 @@ MonoBehaviour:
   textComponent: {fileID: 1582683808}
   lines:
   - I always thought this thing was scary when I was in school.
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
@@ -8566,6 +8566,7 @@ MonoBehaviour:
   - {fileID: 1657474865}
   - {fileID: 1145700447}
   pressJ: {fileID: 1332507042}
+  pressJText: {fileID: 2140040683}
 --- !u!95 &162738193
 Animator:
   serializedVersion: 5
@@ -8906,7 +8907,7 @@ MonoBehaviour:
   textComponent: {fileID: 615923830}
   lines:
   - Going through all the patient files isn't helpful right now.
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
@@ -11340,9 +11341,9 @@ MonoBehaviour:
   lines:
   - "(A pile of notes, with the hospital cultural liaison\u2019s contact number at
     the bottom)"
-  - This cotatct is helpful.
-  - I should get in contact with them before things getting wrose.
-  textSpeed: 0.05
+  - This contact info is helpful.
+  - I should get in contact with them before things get worse.
+  textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
@@ -12755,7 +12756,7 @@ MonoBehaviour:
   - '[Dr.Frame] It''s just that my mood is affected by too much work.'
   - I understand you, but you also have a responsibility to your patients.
   - Remember to explain it clearly to Mrs. Lee so that your work can proceed better.
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons:
   - {fileID: 457384394}
   choiceIndices: 01000000
@@ -14397,7 +14398,7 @@ MonoBehaviour:
   - '[Dr.James] A cup of coffee might be helpful..'
   - Thank you for your hard work, Dr. James.
   - (He is not Mrs. Lee's attending physician.)
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
@@ -14494,7 +14495,7 @@ MonoBehaviour:
   textComponent: {fileID: 1091188575}
   lines:
   - A soda-selling vending machine
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
@@ -57744,7 +57745,7 @@ MonoBehaviour:
   textComponent: {fileID: 952768685}
   lines:
   - A snack-selling vending machine
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
@@ -58679,7 +58680,7 @@ MonoBehaviour:
   textComponent: {fileID: 1225163298}
   lines:
   - A water-selling vending machine
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
@@ -59182,7 +59183,7 @@ MonoBehaviour:
   - Mrs.Lee!?
   - I thought you were...
   - Wait...am I dreaming?
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
@@ -59264,8 +59265,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Press \u201CJ\u201D to interact and for dialogue."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -59419,7 +59420,7 @@ MonoBehaviour:
   - '[Mary] Oh...It is Emma? She always has issues with patients.'
   - Yea..I try to find her
   - '[Mary] okay...She really needs help on that..'
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
@@ -60033,7 +60034,7 @@ MonoBehaviour:
   - '[Man] How long would I need to wait?'
   - Sorry, we are kind of busy this time.
   - Someone would be with you shortly.
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
@@ -60395,7 +60396,7 @@ MonoBehaviour:
   textComponent: {fileID: 915956057}
   lines:
   - Not a good time to read a magazine.
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
@@ -60949,7 +60950,7 @@ MonoBehaviour:
   textComponent: {fileID: 714204395}
   lines:
   - I've lost weight recently.
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
@@ -61118,7 +61119,7 @@ MonoBehaviour:
   - What Emma just did was excessive and constituted microaggression.
   - Which goes against the implementation of DEI.
   - I need to talk to Emma about this.
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
@@ -62093,7 +62094,7 @@ MonoBehaviour:
   - (But it's in another language, you can't understand it)
   - (You took a photo of the ingredient list)
   - I must find a way to translate it so that it can help Mrs. Lee's treatment.
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
@@ -62405,7 +62406,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03745085, y: -0.2054081}
+  m_Offset: {x: 0.03745085, y: 0.24608326}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -62416,7 +62417,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9306277, y: 1.619894}
+  m_Size: {x: 0.9306277, y: 0.7169113}
   m_EdgeRadius: 0
 --- !u!114 &1426425973
 MonoBehaviour:
@@ -63004,7 +63005,7 @@ MonoBehaviour:
     her.
   - '[Emma] I..I got it..sorry...'
   - Mrs. Lee deserves an apology from you.
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons:
   - {fileID: 431087020}
   - {fileID: 2074663838}
@@ -64259,7 +64260,7 @@ MonoBehaviour:
   textComponent: {fileID: 486123095}
   lines:
   - Sleep inside a dream...sounds like Inception
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
@@ -64621,7 +64622,7 @@ MonoBehaviour:
   - Do you want to leave the dream?
   - But I got to figure out how to help Mrs.Lee first.
   - I got to find all the ways to help her.
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons:
   - {fileID: 554883696}
   - {fileID: 559234952}
@@ -64815,7 +64816,7 @@ MonoBehaviour:
   - '[Nick] Got to organize these before I left.'
   - Thank you, Nick. Go home early when you are done.
   - "(He was not the nurse who had just spoken rudely about Miss Lee\u2019s medication.)"
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
@@ -64970,7 +64971,7 @@ MonoBehaviour:
   - '[Voice from Phone] You did the right thing by reporting this.'
   - "[Voice from Phone] Together, we\u2019ll keep our hospital a safe and supportive
     place."
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons:
   - {fileID: 1700319461}
   choiceIndices: 01000000
@@ -66326,7 +66327,7 @@ MonoBehaviour:
   textComponent: {fileID: 807648998}
   lines:
   - The elevator doesn't seem to be working.
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
@@ -73088,7 +73089,7 @@ MonoBehaviour:
   - Take some rest..Mrs.Lee
   - I am sorry for what happened early by us.
   - (There got to be some way to fix it, even though is in my dream)
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
@@ -73363,7 +73364,7 @@ MonoBehaviour:
   - '[Mrs.Lee Daughter] Okay, if that was the answer from all of you, I am going
     to..'
   - '[Mrs.Lee Daughter] Report this matter to the relevant authorities.'
-  textSpeed: 0.05
+  textSpeed: 0.02
   choiceButtons:
   - {fileID: 1492644734}
   - {fileID: 1330117426}
