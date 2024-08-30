@@ -20,6 +20,9 @@ public class Endings : MonoBehaviour
 
     private string filePath;
 
+    public GameObject solutionsCount; // Reference to the solutions count UI element
+    public TextMeshProUGUI CountText; // Reference to the TextMeshPro component for the solutions count text
+
     void Start()
     {
         leavedream = false;
@@ -34,6 +37,9 @@ public class Endings : MonoBehaviour
 
         // Initialize the file with a header
         File.WriteAllText(filePath, "Solution Times Data:\n\n");
+
+        // Initialize the solutions count display
+        UpdateSolutionCountDisplay();
     }
 
     void Update()
@@ -80,6 +86,9 @@ public class Endings : MonoBehaviour
 
             StartCoroutine(DisplayEnding(solutionsFound, "Make the \"Invisible\" Visible"));
             StorylineState.endingMIV = true;
+
+            // Update the solutions count display
+            UpdateSolutionCountDisplay();
         }
     }
 
@@ -95,6 +104,9 @@ public class Endings : MonoBehaviour
 
             StartCoroutine(DisplayEnding(solutionsFound, "Educate the Offender"));
             StorylineState.endingEO = true;
+
+            // Update the solutions count display
+            UpdateSolutionCountDisplay();
         }
     }
 
@@ -110,6 +122,9 @@ public class Endings : MonoBehaviour
 
             StartCoroutine(DisplayEnding(solutionsFound, "Disarm the Microaggression"));
             StorylineState.endingDM = true;
+
+            // Update the solutions count display
+            UpdateSolutionCountDisplay();
         }
     }
 
@@ -125,6 +140,9 @@ public class Endings : MonoBehaviour
 
             StartCoroutine(DisplayEnding(solutionsFound, "Seek External Intervention"));
             StorylineState.endingSEI = true;
+
+            // Update the solutions count display
+            UpdateSolutionCountDisplay();
         }
     }
 
@@ -159,5 +177,13 @@ public class Endings : MonoBehaviour
         string timeStamp = System.DateTime.Now.ToString("yyyyMMdd_HHmmss");
         string uniqueFileName = $"{baseFileName}_{timeStamp}.txt";
         return Path.Combine(folderPath, uniqueFileName);
+    }
+
+    private void UpdateSolutionCountDisplay()
+    {
+        if (CountText != null)
+        {
+            CountText.text = $"Solutions\n{solutionsFound}/4";
+        }
     }
 }

@@ -197,7 +197,7 @@ public class OpeningControl : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(15f);
 
         SceneManager.LoadScene("MainScene");
     }

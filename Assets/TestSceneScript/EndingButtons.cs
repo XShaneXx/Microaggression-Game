@@ -31,31 +31,36 @@ public class EndingButtons : MonoBehaviour
     public void disarm()
     {
         LogChoice("Disarm the Microaggression");
-        ShowEnding("Ending 1/5 - Disarm the Microaggression");
+        ShowEnding("Ending 1/5 - Disarm the Microaggression\n\n" +
+                   "Alex calmly addresses the nurse's statement, pointing out that cultural practices can play a vital role in patient care. The nurse listens, and after a brief discussion, agrees to respect Mr. Khan's diet while ensuring it aligns with medical guidelines.");
     }
 
     public void educate()
     {
         LogChoice("Educate the Offender");
-        ShowEnding("Ending 2/5 - Educate the Offender");
+        ShowEnding("Ending 2/5 - Educate the Offender\n\n" +
+                   "Alex takes a moment to explain why dismissing cultural diets can be harmful, not just to Mr. Khan but to the broader goal of providing culturally competent care. The nurse acknowledges her mistake, and the conversation leads to a better understanding of cultural sensitivity.");
     }
 
     public void seek()
     {
         LogChoice("Seek External Intervention");
-        ShowEnding("Ending 3/5 - Seek External Intervention");
+        ShowEnding("Ending 3/5 - Seek External Intervention\n\n" +
+                   "Recognizing the complexity of the situation, Alex decides to involve the hospital's cultural liaison. The liaison mediates the discussion, helping both Alex and the nurse to reach a solution that respects Mr. Khan's cultural practices while ensuring his medical needs are met.");
     }
 
     public void make()
     {
         LogChoice("Make the Invisible Visible");
-        ShowEnding("Ending 4/5 - Make the Invisible Visible");
+        ShowEnding("Ending 4/5 - Make the Invisible Visible\n\n" +
+                   "Alex points out the underlying assumptions in the nurse's comments, bringing to light the importance of respecting diverse cultural practices. This discussion helps the team to see the value in integrating these practices into patient care, fostering a more inclusive environment.");
     }
 
     public void wrongchoice()
     {
         LogChoice("Wrong Choice");
-        ShowEnding("Ending 5/5 - You didn't help out Mr.Khan. Things happen again...");
+        ShowEnding("Ending 5/5 - You didn't help out Mr. Khan.\n\n" +
+                   "Unfortunately, by not addressing the microaggression, the situation worsens. Mr. Khan feels disrespected, leading to further complications in his care. The team later reflects on the missed opportunity to intervene.");
     }
 
     private void ShowEnding(string endingText)
