@@ -1,7 +1,0 @@
-Solution Times Data:
-
-Total time taken: 244.1142 seconds
-MIV found at: 138.8152 seconds
-DM found at: 155.86 seconds
-SEI found at: 174.7922 seconds
-EO found at: 244.1142 seconds
