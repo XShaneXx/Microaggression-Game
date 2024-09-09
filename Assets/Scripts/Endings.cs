@@ -7,21 +7,28 @@ using System.IO;
 
 public class Endings : MonoBehaviour
 {
-    public GameObject endingMIVDialogue; // Reference to the UI panel
-    public TextMeshProUGUI dialogueText; // Reference to the TextMeshPro component
+    public GameObject endingMIVDialogue;
+    public TextMeshProUGUI dialogueText;
     public bool leavedream;
 
-    private int solutionsFound = 0; // Track the number of solutions found
-    private HashSet<string> solutionsCompleted = new HashSet<string>(); // Track completed solutions
-    private float startTime; // Track when the player first presses J
-    private float endTime; // Track when all solutions are found
+    private int solutionsFound = 0; 
+    private HashSet<string> solutionsCompleted = new HashSet<string>(); 
+    private float startTime;
+    private float endTime;
 
-    private Dictionary<string, float> solutionTimes = new Dictionary<string, float>(); // Store times for each solution
+    private Dictionary<string, float> solutionTimes = new Dictionary<string, float>(); 
 
     private string filePath;
 
-    public GameObject solutionsCount; // Reference to the solutions count UI element
-    public TextMeshProUGUI CountText; // Reference to the TextMeshPro component for the solutions count text
+    public GameObject solutionsCount;
+    public TextMeshProUGUI CountText;
+    public TextMeshProUGUI solutionsText; // Reference to the solutions text
+    public TextMeshProUGUI objectives; // Reference to the objectives text
+
+    public GameObject menuUI;
+    private bool isMenuActive = false;
+
+    private string[] solutionsArray = new string[4]; // Array to track the solution progress
 
     void Start()
     {
@@ -38,12 +45,24 @@ public class Endings : MonoBehaviour
         // Initialize the file with a header
         File.WriteAllText(filePath, "Solution Times Data:\n\n");
 
-        // Initialize the solutions count display
+        // Initialize the solutions count display and objective text
         UpdateSolutionCountDisplay();
+        UpdateObjectivesText();
+
+        // Initialize solutionsText with dashes
+        InitializeSolutionsText();
+
+        // Ensure menu is initially hidden
+        menuUI.SetActive(false);
     }
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ToggleMenu();
+        }
+
         if (!leavedream && StorylineState.endingMIV && StorylineState.endingEO && StorylineState.endingDM && StorylineState.endingSEI)
         {
             leavedream = true;
@@ -58,17 +77,14 @@ public class Endings : MonoBehaviour
         yield return new WaitForSeconds(10f);
 
         endingMIVDialogue.SetActive(true);
-
         dialogueText.text = "You found all the solutions, let's wake up!";
-
         yield return new WaitForSeconds(5f);
-
         endingMIVDialogue.SetActive(false);
     }
 
     public void StartTrackingTime()
     {
-        if (startTime == 0f) // Start tracking time only on the first press of J
+        if (startTime == 0f)
         {
             startTime = Time.time;
         }
@@ -80,15 +96,14 @@ public class Endings : MonoBehaviour
         {
             solutionsFound++;
             solutionsCompleted.Add("MIV");
-
             float timeFound = Time.time - startTime;
             solutionTimes["MIV"] = timeFound;
 
+            // Update the solution in the array and UI
+            UpdateSolution(0, "Make the \"Invisible\" Visible");
+            UpdateSolutionCountDisplay();
             StartCoroutine(DisplayEnding(solutionsFound, "Make the \"Invisible\" Visible"));
             StorylineState.endingMIV = true;
-
-            // Update the solutions count display
-            UpdateSolutionCountDisplay();
         }
     }
 
@@ -98,15 +113,14 @@ public class Endings : MonoBehaviour
         {
             solutionsFound++;
             solutionsCompleted.Add("EO");
-
             float timeFound = Time.time - startTime;
             solutionTimes["EO"] = timeFound;
 
+            // Update the solution in the array and UI
+            UpdateSolution(1, "Educate the Offender");
+            UpdateSolutionCountDisplay();
             StartCoroutine(DisplayEnding(solutionsFound, "Educate the Offender"));
             StorylineState.endingEO = true;
-
-            // Update the solutions count display
-            UpdateSolutionCountDisplay();
         }
     }
 
@@ -116,15 +130,14 @@ public class Endings : MonoBehaviour
         {
             solutionsFound++;
             solutionsCompleted.Add("DM");
-
             float timeFound = Time.time - startTime;
             solutionTimes["DM"] = timeFound;
 
+            // Update the solution in the array and UI
+            UpdateSolution(2, "Disarm the Microaggression");
+            UpdateSolutionCountDisplay();
             StartCoroutine(DisplayEnding(solutionsFound, "Disarm the Microaggression"));
             StorylineState.endingDM = true;
-
-            // Update the solutions count display
-            UpdateSolutionCountDisplay();
         }
     }
 
@@ -134,26 +147,33 @@ public class Endings : MonoBehaviour
         {
             solutionsFound++;
             solutionsCompleted.Add("SEI");
-
             float timeFound = Time.time - startTime;
             solutionTimes["SEI"] = timeFound;
 
+            // Update the solution in the array and UI
+            UpdateSolution(3, "Seek External Intervention");
+            UpdateSolutionCountDisplay();
             StartCoroutine(DisplayEnding(solutionsFound, "Seek External Intervention"));
             StorylineState.endingSEI = true;
+        }
+    }
 
-            // Update the solutions count display
-            UpdateSolutionCountDisplay();
+    private void UpdateSolution(int index, string solution)
+    {
+        solutionsArray[index] = solution;
+        UpdateSolutionsText();
+
+        if (solutionsFound == 4)
+        {
+            UpdateObjectivesText();
         }
     }
 
     private IEnumerator DisplayEnding(int solutionNumber, string message)
     {
         endingMIVDialogue.SetActive(true);
-
         dialogueText.text = $"Solution {solutionNumber}/4 - {message}";
-
         yield return new WaitForSeconds(5f);
-
         endingMIVDialogue.SetActive(false);
     }
 
@@ -162,7 +182,6 @@ public class Endings : MonoBehaviour
         using (StreamWriter writer = new StreamWriter(filePath, true))
         {
             writer.WriteLine($"Total time taken: {endTime - startTime} seconds");
-
             foreach (var solution in solutionTimes)
             {
                 writer.WriteLine($"{solution.Key} found at: {solution.Value} seconds");
@@ -183,7 +202,69 @@ public class Endings : MonoBehaviour
     {
         if (CountText != null)
         {
-            CountText.text = $"Solutions\n{solutionsFound}/4";
+            CountText.text = $"Solutions Found {solutionsFound}/4";
         }
+    }
+
+    private void InitializeSolutionsText()
+    {
+        for (int i = 0; i < solutionsArray.Length; i++)
+        {
+            solutionsArray[i] = "--------------------------------------------";
+        }
+        UpdateSolutionsText();
+    }
+
+    private void UpdateSolutionsText()
+    {
+        if (solutionsText != null)
+        {
+            solutionsText.text = $"- Solution 1: {solutionsArray[0]}\n\n" +
+                                 $"- Solution 2: {solutionsArray[1]}\n\n" +
+                                 $"- Solution 3: {solutionsArray[2]}\n\n" +
+                                 $"- Solution 4: {solutionsArray[3]}";
+        }
+    }
+
+    private void UpdateObjectivesText()
+    {
+        if (objectives != null)
+        {
+            if (solutionsFound == 4)
+            {
+                objectives.text = "Objective: Find a way to leave the dream";
+            }
+            else
+            {
+                objectives.text = "Objective: Find all 4 solutions to help Mrs.Lee";
+            }
+        }
+    }
+
+    // Method for ESC key toggle functionality
+    public void ToggleMenu()
+    {
+        if (isMenuActive)
+        {
+            closeMenu();
+        }
+        else
+        {
+            openMenu();
+        }
+    }
+
+    public void openMenu()
+    {
+        isMenuActive = true;
+        menuUI.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void closeMenu()
+    {
+        isMenuActive = false;
+        menuUI.SetActive(false);
+        Time.timeScale = 1f;
     }
 }
