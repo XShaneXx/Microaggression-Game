@@ -51,9 +51,6 @@ public class Endings : MonoBehaviour
 
         // Initialize solutionsText with dashes
         InitializeSolutionsText();
-
-        // Ensure menu is initially hidden
-        menuUI.SetActive(false);
     }
 
     void Update()
