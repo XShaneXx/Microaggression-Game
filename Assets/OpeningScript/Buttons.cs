@@ -7,6 +7,7 @@ public class Buttons : MonoBehaviour
 {
     
     public GameObject howToPlayPanel;
+    public GameObject storyPanel;
 
     public void gameStartButton()
     {
@@ -21,5 +22,15 @@ public class Buttons : MonoBehaviour
     public void close()
     {
         howToPlayPanel.SetActive(false);
+    }
+
+    public void storyOpen()
+    {
+        storyPanel.SetActive(true);
+    }
+
+    public void storyClose()
+    {
+        storyPanel.SetActive(false);
     }
 }
