@@ -7020,8 +7020,9 @@ MonoBehaviour:
   - Understanding the impact of microaggressions on patient care is crucial.
   - We aim to ensure that every patient interaction is free from bias and promotes
     healing.
-  - According to the manual, Dr.Frame's behavior to Mrs. Lee is absolutely unacceptable.
-  - I need to talks to Dr.Frame about this
+  - '[Me] According to the manual, Doctor A''s behavior to Mrs. Lee is absolutely
+    unacceptable.'
+  - '[Me] I need to talks to Dr.Frame about this'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -7337,7 +7338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1875896995}
   lines:
-  - The time doesn't seem running in here.
+  - '[Me] The time doesn''t seem running in here.'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -7750,11 +7751,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 341786017}
   lines:
-  - I don't need to use the computer right now.
-  - Oh wait! I could use the computer to translate.
+  - '[Me] I don''t need to use the computer right now.'
+  - '[Me] Oh wait! I could use the computer to translate.'
   - (Using the computer camera, you input the medication ingredients list into computer)
-  - The medication Mrs. Lee is taking is correct and helps her condition.
-  - I need to find Emma and talks about this.
+  - '[Me] The medication the mother is taking is correct and helps her condition.'
+  - '[Me] I need to find Nurse A and talks about this.'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -8079,7 +8080,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1582683808}
   lines:
-  - I always thought this thing was scary when I was in school.
+  - '[Me] I always thought this thing was scary when I was in school.'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -9531,7 +9532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 615923830}
   lines:
-  - Going through all the patient files isn't helpful right now.
+  - '[Me] Going through all the patient files isn''t helpful right now.'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -12338,10 +12339,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1083367842}
   lines:
-  - "(A pile of notes, with the hospital cultural liaison\u2019s contact number at
-    the bottom)"
-  - This contact info is helpful.
-  - I should get in contact with them before things get worse.
+  - "[My thoughts] A pile of notes, with the hospital cultural liaison\u2019s contact
+    number at the bottom"
+  - '[Me] This contact info is helpful.'
+  - '[Me] I should get in contact with them before things get worse.'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -13842,17 +13843,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1812207241}
   lines:
-  - '[Dr.Frame] Please don''t bother me, I still have a lot of things to do.'
-  - I need to talk you about Mrs.Lee..
-  - What you just said in front of Mrs.Lee is horrible.
-  - "I don\u2019t think it\u2019s fair to generalize patients based on their ethnicity. "
-  - Each patient is unique and we need to understand their individual concerns.
-  - Also, what you just did violates what the hospital manual said.
-  - This is a serious mistake for you as a doctor.
-  - '[Dr.Frame] Sorry..I didn''t mean to...'
-  - '[Dr.Frame] It''s just that my mood is affected by too much work.'
-  - I understand you, but you also have a responsibility to your patients.
-  - Remember to explain it clearly to Mrs. Lee so that your work can proceed better.
+  - '[Doctor A] Please don''t bother me, I still have a lot of things to do.'
+  - '[Me] I need to talk you about the mother..'
+  - '[Me] What you just said in front of the mother is horrible.'
+  - "[Me] I don\u2019t think it\u2019s fair to generalize patients based on their
+    ethnicity. "
+  - '[Me] Each patient is unique and we need to understand their individual concerns.'
+  - '[Me] Also, what you just did violates what the hospital manual said.'
+  - '[Me] This is a serious mistake for you as a doctor.'
+  - '[Doctor A] Sorry..I didn''t mean to...'
+  - '[Doctor A]  It''s just that my mood is affected by too much work.'
+  - '[Me] I understand you, but you also have a responsibility to your patients.'
+  - '[Me] Remember to explain it clearly to the mother so that your work can proceed
+    better.'
   textSpeed: 0.02
   choiceButtons:
   - {fileID: 457384394}
@@ -15589,10 +15592,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1947077111}
   lines:
-  - '[Dr.James] Still got a lots of work to be finish..'
-  - '[Dr.James] A cup of coffee might be helpful..'
-  - Thank you for your hard work, Dr. James.
-  - (He is not Mrs. Lee's attending physician.)
+  - '[Doctor B] Still got a lots of work to be finish..'
+  - '[Doctor B] A cup of coffee might be helpful..'
+  - '[Me] Thank you for your hard work.'
+  - '[My thoughts] He is not Mrs. Lee''s attending physician.'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -15690,7 +15693,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1091188575}
   lines:
-  - A soda-selling vending machine
+  - '[Me] A soda-selling vending machine'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -59754,7 +59757,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 952768685}
   lines:
-  - A snack-selling vending machine
+  - '[Me] A snack-selling vending machine'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -60690,7 +60693,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1225163298}
   lines:
-  - A water-selling vending machine
+  - '[Me] A water-selling vending machine'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -61420,13 +61423,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1144736193}
   lines:
-  - Huh?
-  - What happened?
-  - Am I not sleeping in my bed at home?
-  - Why am I still at the hospital?
-  - Mrs.Lee!?
-  - I thought you were...
-  - Wait...am I dreaming?
+  - '[Me] Huh?'
+  - '[Me] What happened?'
+  - '[Me] Am I not sleeping in my bed at home?'
+  - '[Me] Why am I still at the hospital?'
+  - '[Me] Mrs.Lee!?'
+  - '[Me] I thought you were...'
+  - '[Me] Wait...am I dreaming?'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -61659,12 +61662,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 147166436}
   lines:
-  - How was everything, Mary?
-  - '[Mary] Great so far, anything you looking for?'
-  - Yea...Mrs. Lee was discriminated against for using her traditional medicine..
-  - '[Mary] Oh...It is Emma? She always has issues with patients.'
-  - Yea..I try to find her
-  - '[Mary] okay...She really needs help on that..'
+  - '[Me] How was everything, Mary?'
+  - '[Nurse D] Great so far, anything you looking for?'
+  - '[Me] Yea...The Mother was discriminated against for using her traditional medicine..'
+  - '[Nurse D] Oh...It is Nurse A? She always has issues with patients.'
+  - '[Me] Yea..I try to find her'
+  - '[Nurse D] okay...She really needs help on that..'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -62278,8 +62281,8 @@ MonoBehaviour:
   textComponent: {fileID: 1985903255}
   lines:
   - '[Man] How long would I need to wait?'
-  - Sorry, we are kind of busy this time.
-  - Someone would be with you shortly.
+  - '[Me] Sorry, we are kind of busy this time.'
+  - '[Me] Someone would be with you shortly.'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -62642,7 +62645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 915956057}
   lines:
-  - Not a good time to read a magazine.
+  - '[Me] Not a good time to read a magazine.'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -63390,7 +63393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 714204395}
   lines:
-  - I've lost weight recently.
+  - '[Me] I''ve lost weight recently.'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -63558,10 +63561,10 @@ MonoBehaviour:
   - '"Commit to DEI. Stand up against microaggressions."'
   - '"Together, we can create a space where everyone feels valued, respected, and
     included."'
-  - This poster is absolutely correct.
-  - What Emma just did was excessive and constituted microaggression.
-  - Which goes against the implementation of DEI.
-  - I need to talk to Emma about this.
+  - '[Me] This poster is absolutely correct.'
+  - '[Me] What Nurse A just did was excessive and constituted microaggression.'
+  - '[Me] Which goes against the implementation of DEI.'
+  - '[Me] I need to talk to Nurse A about this.'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -64533,11 +64536,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2066412295}
   lines:
-  - (Mrs. Lee's Traditional Herbal Medicine)
-  - (The ingredients of the medicine are written on the back of the medicine bottle)
-  - (But it's in another language, you can't understand it)
+  - '[My thoughts] The Mother''s Traditional Herbal Medicine'
+  - '[My thoughts] The ingredients of the medicine are written on the back of the
+    medicine bottle'
+  - '[My thoughts] But it''s in another language, you can''t understand it'
   - (You took a photo of the ingredient list)
-  - I must find a way to translate it so that it can help Mrs. Lee's treatment.
+  - '[Me] I must find a way to translate it so that it can help Mrs. Lee''s treatment.'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -65572,19 +65576,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1788243089}
   lines:
-  - '[Emma] Why are some patients unwilling to follow medical advice and trust some
-    unscience?'
-  - Emma, I need to talk to you..
-  - The medication Mrs. Lee is taking is helping her.
-  - Your actions towards Mrs. Lee are a serious violation of the DEI.
-  - Also, your words and attitude toward the patient were not right.
-  - This kind of disrespect for other's culture is a manifestation of microaggression.
-  - '[Emma] I..I am sorry..I just.I just..'
-  - This can cause serious problems.
-  - Such as lack of trust in our work or lack of cooperation with our treatment of
-    her.
-  - '[Emma] I..I got it..sorry...'
-  - Mrs. Lee deserves an apology from you.
+  - '[Nurse A] Why are some patients unwilling to follow medical advice and trust
+    some unscience?'
+  - '[Me] I need to talk to you..'
+  - '[Me] The medication the mother is taking is helping her.'
+  - '[Me] Your actions towards her are a serious violation of the DEI.'
+  - '[Me] Also, your words and attitude toward the patient were not right.'
+  - '[Me] This kind of disrespect for other''s culture is a manifestation of microaggression.'
+  - '[Nurse A] I..I am sorry..I just.I just..'
+  - '[Me] This can cause serious problems.'
+  - '[Me] Such as lack of trust in our work or lack of cooperation with our treatment
+    of her.'
+  - '[Nurse A] I..I got it..sorry...'
+  - '[Me] She deserves an apology from you.'
   textSpeed: 0.02
   choiceButtons:
   - {fileID: 431087020}
@@ -66979,7 +66983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 486123095}
   lines:
-  - Sleep inside a dream...sounds like Inception
+  - '[Me] Sleep inside a dream...sounds like Inception'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -67341,7 +67345,7 @@ MonoBehaviour:
   - The end of the stairway doesn't go to the next floor.
   - Seems like would be an exit of the dream.
   - Do you want to leave the dream?
-  - But I got to figure out how to help Mrs.Lee first.
+  - But I got to figure out how to help the Mom first.
   - I got to find all the ways to help her.
   textSpeed: 0.02
   choiceButtons:
@@ -67535,9 +67539,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1156040818}
   lines:
-  - '[Nick] Got to organize these before I left.'
-  - Thank you, Nick. Go home early when you are done.
-  - "(He was not the nurse who had just spoken rudely about Miss Lee\u2019s medication.)"
+  - '[Nurse C] Got to organize these before I left.'
+  - '[Me] Thank you. Go home early when you are done.'
+  - "[My thoughts] He was not the nurse who had just spoken rudely about the mother\u2019s
+    medication."
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -67674,23 +67679,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 135719320}
   lines:
-  - I don't need to make any calls right now.
-  - The phone number is...
-  - Hi, my name is Alex, calling from xxx hostipal.
-  - I need to report something that happened today.
-  - A colleague made inappropriate comments to a patient.
+  - '[Me] I don''t need to make any calls right now.'
+  - '[Me] The phone number is...'
+  - '[Me] Hi, I am calling from xxx hostipal.'
+  - '[Me] I need to report something that happened today.'
+  - '[Me] A colleague made inappropriate comments to a patient.'
   - '[Voice from Phone] Thank you for bringing this to my attention, Alex.'
   - '[Voice from Phone] Can you tell me exactly what was said and in what context?'
-  - Patient mentioned their cultural treatment, and my colleague made a joke seemed
-    dismissive.
-  - "The patient looked uncomfortable, and it didn\u2019t feel right."
+  - '[Me] Patient mentioned their cultural treatment, and my colleague made a joke
+    seemed dismissive.'
+  - "[Me] The patient looked uncomfortable, and it didn\u2019t feel right."
   - '[Voice from Phone] I understand. That could be a microaggression'
   - "[Voice from Phone] Which can deeply impact a patient\u2019s experience and treatment."
   - "[Voice from Phone] We\u2019ll address this immediately."
   - "[Voice from Phone] I\u2019ll talk to your colleague and ensure they get DEI
     training."
   - "[Voice from Phone] We\u2019ll also check in with the patient."
-  - Thank you. I just want to make sure our environment is inclusive for everyone.
+  - '[Me] Thank you. I just want to make sure our environment is inclusive for everyone.'
   - '[Voice from Phone] You did the right thing by reporting this.'
   - "[Voice from Phone] Together, we\u2019ll keep our hospital a safe and supportive
     place."
@@ -69282,7 +69287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 807648998}
   lines:
-  - The elevator doesn't seem to be working.
+  - '[Me] The elevator doesn''t seem to be working.'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -76476,13 +76481,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 98631256}
   lines:
-  - Mrs.Lee..Are you aright?
-  - (Oh..right...I am dreaming...)
-  - (This is where Mrs. Lee's daughter complaining about us..)
-  - (I can't let this happen again...)
-  - Take some rest..Mrs.Lee
-  - I am sorry for what happened early by us.
-  - (There got to be some way to fix it, even though is in my dream)
+  - '[Me] Are you aright?'
+  - '[My thoughts] Oh..right...I am dreaming...'
+  - '[My thoughts] This is where the daughter complaining about us..'
+  - '[My thoughts] I can''t let this happen again...'
+  - '[Me] Take some rest..'
+  - '[Me] I am sorry for what happened early by us.'
+  - '[My thoughts] There got to be some way to fix it, even though is in my dream'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -76750,15 +76755,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 558898767}
   lines:
-  - '[Mrs.Lee Daughter] What you guys did is so rude to my mom and me.'
-  - '[Mrs.Lee Daughter] It is totally unthinkable that such a thing could happen
-    in a hospital.'
-  - '[Front Desk Nurse] I am sorry to hear that, but I can''t do anything on that..'
-  - '[Mrs.Lee Daughter] Thank you, but you better do since this is a serious issue
-    or I will..'
-  - '[Mrs.Lee Daughter] Okay, if that was the answer from all of you, I am going
-    to..'
-  - '[Mrs.Lee Daughter] Report this matter to the relevant authorities.'
+  - '[Daughter] What you guys did is so rude to my mom and me.'
+  - '[Daughter] It is totally unthinkable that such a thing could happen in a hospital.'
+  - '[Nurse B] I am sorry to hear that, but I can''t do anything on that..'
+  - '[Daughter] Thank you, but you better do since this is a serious issue or I will..'
+  - '[Daughter] Okay, if that was the answer from all of you, I am going to..'
+  - '[Daughter] Report this matter to the relevant authorities.'
   textSpeed: 0.02
   choiceButtons:
   - {fileID: 1492644734}

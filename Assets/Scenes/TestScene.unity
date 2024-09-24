@@ -6794,8 +6794,6 @@ MonoBehaviour:
   - Understanding the impact of microaggressions on patient care is crucial.
   - We aim to ensure that every patient interaction is free from bias and promotes
     healing.
-  - According to the manual, Dr.Frame's behavior to Mrs. Lee is absolutely unacceptable.
-  - I need to talks to Dr.Frame about this
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -11938,7 +11936,6 @@ RectTransform:
   - {fileID: 41232289}
   - {fileID: 1315294707}
   - {fileID: 1621431512}
-  - {fileID: 1496988051}
   - {fileID: 783054562}
   - {fileID: 698823662}
   m_Father: {fileID: 0}
@@ -18066,6 +18063,7 @@ Transform:
   - {fileID: 1660657002}
   - {fileID: 427497506}
   - {fileID: 97537224}
+  - {fileID: 1496988051}
   m_Father: {fileID: 362546410}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -61744,11 +61742,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1144736193}
   lines:
-  - Another day of work.
-  - I hope Mrs.Lee is doing well.
-  - I still feel sorry about her.
+  - '[Me] Another day of work.'
+  - '[Me] I hope the mother is doing well.'
+  - '[Me] I still feel sorry about her.'
   - (There was a noise coming from the hall.)
-  - What is happening?
+  - '[Me] What is happening?'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -64086,10 +64084,6 @@ MonoBehaviour:
   - '"Commit to DEI. Stand up against microaggressions."'
   - '"Together, we can create a space where everyone feels valued, respected, and
     included."'
-  - This poster is absolutely correct.
-  - What Emma just did was excessive and constituted microaggression.
-  - Which goes against the implementation of DEI.
-  - I need to talk to Emma about this.
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -66340,21 +66334,21 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496988050}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.12965025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1788243088}
   - {fileID: 431087019}
   - {fileID: 2074663837}
-  m_Father: {fileID: 362546410}
+  m_Father: {fileID: 783054562}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -375}
-  m_SizeDelta: {x: 0, y: -750}
+  m_AnchoredPosition: {x: 963.5292, y: 160.9455}
+  m_SizeDelta: {x: 1920, y: 330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1496988053
 MonoBehaviour:
@@ -68083,8 +68077,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1753526096}
   lines:
-  - I still got three more hours until I finish my shift.
-  - I should stay here for now.
+  - '[Me] I still got three more hours until I finish my shift.'
+  - '[Me] I should stay here for now.'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -76786,7 +76780,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Let's respect Mr. Khan's cultural practices and find a balanced approach.
+  m_text: Let's respect patient's cultural practices and find a balanced approach.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -77547,16 +77541,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 558898767}
   lines:
-  - '[Emma] Mrs. Khan, How many time I need to tell you?'
-  - '[Mrs.Khan] But..At least...'
-  - '[Emma] You want your husband to get better, right? '
-  - '[Emma] Then just follow the nutritional guidelines that we gave you.'
-  - "[Emma] Those ancient cultural diets don\u2019t really help."
-  - '[Emma] Follow them will only make it harder for us to follow up on your husband''s
+  - '[Nurse A] How many time I need to tell you?'
+  - '[Wife] But..At least...'
+  - '[Nurse A] You want your husband to get better, right? '
+  - '[Nurse A] Then just follow the nutritional guidelines that we gave you.'
+  - "[Nurse A] Those ancient cultural diets don\u2019t really help."
+  - '[Nurse A] Follow them will only make it harder for us to follow up on your husband''s
     condition.'
-  - '[Emma] Even would making the condition worse.'
-  - '[Mrs.Khan] ......'
-  - '[Emma whispering] These ancient cultures always add to the burden of my work.'
+  - '[Nurse A] Even would making the condition worse.'
+  - '[Wife] ......'
+  - '[Nurse A whispering] These ancient cultures always add to the burden of my work.'
   - (Things happen again, what would you do?)
   textSpeed: 0.02
   choiceButtons:
