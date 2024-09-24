@@ -12,8 +12,6 @@ public class OpeningDialogue : MonoBehaviour
     public Button[] choiceButtons;
     public int[] choiceIndices; // Array to specify choice points
     public int targetIndex; // Public integer to set the target index in the Inspector
-    public float lineDelay = 1f; // Delay between lines in seconds
-    public float endDelay = 2f; // Delay before closing the panel after the last line
 
     private int index;
     private bool isChoicePoint;
@@ -24,7 +22,24 @@ public class OpeningDialogue : MonoBehaviour
     void Start()
     {
         ResetDialogue();
-        StartDialogue();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if ((Input.GetKeyDown(KeyCode.J) || Input.GetMouseButtonDown(0)) && !isChoicePoint && !isTyping)
+        {
+            if (textComponent.text == lines[index])
+            {
+                NextLine();
+            }
+            else
+            {
+                StopAllCoroutines();
+                textComponent.text = lines[index];
+                isTyping = false;
+            }
+        }
     }
 
     void StartDialogue()
@@ -63,25 +78,13 @@ public class OpeningDialogue : MonoBehaviour
             {
                 index++;
             }
-            StartCoroutine(WaitAndTypeNextLine());
+            StartCoroutine(TypeLine());
         }
         else
         {
-            StartCoroutine(EndDialogueWithDelay());
+            gameObject.SetActive(false);
+            ResetDialogue(); // Reset dialogue after it finishes
         }
-    }
-
-    IEnumerator WaitAndTypeNextLine()
-    {
-        yield return new WaitForSeconds(lineDelay); // Wait for the specified delay before displaying the next line
-        StartCoroutine(TypeLine());
-    }
-
-    IEnumerator EndDialogueWithDelay()
-    {
-        yield return new WaitForSeconds(endDelay); // Wait for the specified delay before closing the panel
-        gameObject.SetActive(false);
-        ResetDialogue(); // Reset dialogue after it finishes
     }
 
     void CheckForChoicePoint()
@@ -90,10 +93,6 @@ public class OpeningDialogue : MonoBehaviour
         if (isChoicePoint)
         {
             DisplayChoices();
-        }
-        else
-        {
-            NextLine(); // Automatically go to the next line if it's not a choice point
         }
     }
 
