@@ -20,7 +20,7 @@ public class Phone : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isPlayerInRange && Input.GetKeyDown(KeyCode.J))
+        if (isPlayerInRange && (Input.GetKeyDown(KeyCode.J) || Input.GetMouseButtonDown(0)))
         {
             if (!dialogueStarted) // Only set the start line if the dialogue hasn't started yet
             {

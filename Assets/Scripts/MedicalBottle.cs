@@ -18,7 +18,7 @@ public class MedicalBottle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isPlayerInRange && Input.GetKeyDown(KeyCode.J))
+        if (isPlayerInRange && (Input.GetKeyDown(KeyCode.J) || Input.GetMouseButtonDown(0)))
         {
             dialoguePanel.SetActive(true); // Activate the dialogue panel
             StorylineState.hasCheckedMedicalBottle = true; // Set the flag indicating the player checked the medical bottle

@@ -18,7 +18,7 @@ public class Doctor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isPlayerInRange && Input.GetKeyDown(KeyCode.J))
+        if (isPlayerInRange && (Input.GetKeyDown(KeyCode.J) || Input.GetMouseButtonDown(0)))
         {
             dialoguePanel.SetActive(true); // Activate the dialogue panel
         }
