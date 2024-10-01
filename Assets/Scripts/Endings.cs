@@ -131,7 +131,7 @@ public class Endings : MonoBehaviour
         yield return new WaitForSeconds(10f);
 
         endingMIVDialogue.SetActive(true);
-        dialogueText.text = "You found all the solutions, let's wake up!";
+        dialogueText.text = "You found all the solutions!";
         yield return new WaitForSeconds(5f);
         endingMIVDialogue.SetActive(false);
     }
@@ -275,7 +275,7 @@ public class Endings : MonoBehaviour
         {
             if (solutionsFound == 4)
             {
-                objectives.text = "Objective: Find a way to leave the dream";
+                objectives.text = "Objective: Leave the hopstial";
             }
             else
             {

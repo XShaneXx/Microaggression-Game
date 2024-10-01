@@ -7606,7 +7606,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1875896995}
   lines:
-  - '[Me] The time doesn''t seem running in here.'
+  - '[Me] I''m off work at this time.'
+  - '[Me] But I still need to help the mother before leaving get off work.'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -9495,8 +9496,6 @@ MonoBehaviour:
   - {fileID: 1213489279}
   - {fileID: 1657474865}
   - {fileID: 1145700447}
-  pressJ: {fileID: 1332507042}
-  pressJText: {fileID: 2140040683}
 --- !u!95 &162738193
 Animator:
   serializedVersion: 5
@@ -12497,7 +12496,6 @@ RectTransform:
   - {fileID: 2066433348}
   - {fileID: 2069440945}
   - {fileID: 883999907}
-  - {fileID: 1332507043}
   - {fileID: 2034546394}
   - {fileID: 1496988051}
   - {fileID: 545954792}
@@ -62913,13 +62911,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1144736193}
   lines:
-  - '[Me] Huh?'
+  - '[Me] If she doesn''t cooperate with the treatment, the situation will only get
+    worse.'
   - '[Me] What happened?'
-  - '[Me] Am I not sleeping in my bed at home?'
-  - '[Me] Why am I still at the hospital?'
-  - '[Me] Mrs.Lee!?'
-  - '[Me] I thought you were...'
-  - '[Me] Wait...am I dreaming?'
+  - '[Me] Is it because of what the nurse and doctor said just now?'
+  - '[Me] If that''s the case, I have to do something to help her.'
+  - '[Me] What do I need to do to help her?'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -65457,83 +65454,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330117424}
-  m_CullTransparentMesh: 1
---- !u!1 &1332507042
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1332507043}
-  - component: {fileID: 1332507045}
-  - component: {fileID: 1332507044}
-  m_Layer: 5
-  m_Name: ForJ
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1332507043
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1332507042}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2140040682}
-  m_Father: {fileID: 362546410}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 480}
-  m_SizeDelta: {x: 0, y: -960}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1332507044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1332507042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -1239895041, guid: d5accc2b4a40c2f40a0b4aa99af0f7df, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1332507045
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1332507042}
   m_CullTransparentMesh: 1
 --- !u!1 &1332640249
 GameObject:
@@ -69156,7 +69076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 486123095}
   lines:
-  - '[Me] Sleep inside a dream...sounds like Inception'
+  - '[Me] I shouldn''t be sleeping in a bed used by a sick person.'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -69515,16 +69435,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1753526096}
   lines:
-  - The end of the stairway doesn't go to the next floor.
-  - Seems like would be an exit of the dream.
-  - Do you want to leave the dream?
+  - You can leave the hospital from this side.
+  - Do you want to leave the hospital?
   - But I got to figure out how to help the Mom first.
   - I got to find all the ways to help her.
   textSpeed: 0.02
   choiceButtons:
   - {fileID: 554883696}
   - {fileID: 559234952}
-  choiceIndices: 02000000
+  choiceIndices: 01000000
   targetIndex: 0
   dialoguePanel: {fileID: 1621431511}
 --- !u!1 &1654544254
@@ -71730,7 +71649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 807648998}
   lines:
-  - '[Me] The elevator doesn''t seem to be working.'
+  - '[Me] The hospital elevator is under maintenance recently.'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -79183,12 +79102,13 @@ MonoBehaviour:
   textComponent: {fileID: 98631256}
   lines:
   - '[Me] Are you aright?'
-  - '[My thoughts] Oh..right...I am dreaming...'
-  - '[My thoughts] This is where the daughter complaining about us..'
-  - '[My thoughts] I can''t let this happen again...'
+  - '[My thoughts] She didn''t reply. It seems that she doesn''t trust our medical
+    staff.'
+  - '[Me] I''m sorry that my colleague just made those remarks about you and your
+    daughter.'
+  - '[Me] I will help you solve this problem, please trust me.'
   - '[Me] Take some rest..'
-  - '[Me] I am sorry for what happened early by us.'
-  - '[My thoughts] There got to be some way to fix it, even though is in my dream'
+  - '[My thoughts] I need to talk to that nurse and doctor.'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -80190,138 +80110,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2140040681
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2140040682}
-  - component: {fileID: 2140040684}
-  - component: {fileID: 2140040683}
-  m_Layer: 5
-  m_Name: EndingText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2140040682
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2140040681}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1332507043}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000011444, y: 0.000047684}
-  m_SizeDelta: {x: 1850, y: 70}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2140040683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2140040681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Press "J" for interaction and dialogue
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4210752250
-  m_fontColor: {r: 0.98039216, g: 0.98039216, b: 0.98039216, a: 0.98039216}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &2140040684
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2140040681}
-  m_CullTransparentMesh: 1

@@ -15,22 +15,10 @@ public class Player : MonoBehaviour
     private float udMoveIndex;
 
     public GameObject[] uiPanels;
-    public GameObject pressJ;
-    public TextMeshProUGUI pressJText; // Reference to the TextMeshPro component
-
-    private string[] messages = new string[]
-    {
-        "Press 'J' for interaction and dialogue",
-        "NPCs and Items are available for interaction",
-        "Find all 4 solutions to help Mrs. Lee!"
-    };
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
-        // Start the coroutine to display messages
-        StartCoroutine(DisplayPressJMessages());
     }
 
     void Update()
@@ -72,18 +60,5 @@ public class Player : MonoBehaviour
             }
         }
         return false;
-    }
-
-    // Coroutine to display each message sequentially
-    private IEnumerator DisplayPressJMessages()
-    {
-        foreach (string message in messages)
-        {
-            pressJText.text = message;
-            pressJ.SetActive(true);
-            yield return new WaitForSeconds(3f); // Display each message for 3 seconds
-        }
-
-        pressJ.SetActive(false); // Disable the pressJ GameObject after displaying all messages
     }
 }
