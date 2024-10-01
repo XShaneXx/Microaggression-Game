@@ -11548,7 +11548,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -267.88}
-  m_SizeDelta: {x: 1436.6702, y: 905.4731}
+  m_SizeDelta: {x: 1436.6702, y: 970.8177}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &368053114
 MonoBehaviour:
@@ -63535,7 +63535,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 643.4, y: 316.55}
+  m_AnchoredPosition: {x: 643.4, y: 369.64}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1465044357
@@ -74567,8 +74567,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000076293945, y: 0}
-  m_SizeDelta: {x: 1226.7935, y: 693.0935}
+  m_AnchoredPosition: {x: 0, y: -0.000011921}
+  m_SizeDelta: {x: 1226.7935, y: 784.5645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2061355662
 MonoBehaviour:
@@ -74590,14 +74590,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'In the hospital, you witnessed the occurrence of microaggression, but
-    did nothing, which led to the patient''s condition worsening.
-
-    At night,
-    you were able to get another chance to correct this mistake in your dream.
-
-    How
-    would you help the patient solve the problem of microaggression?'
+  m_text: "As a doctor at xxx Hospital, you are patrolling the wards as usual. When
+    you pass a ward, the noisy conversation makes you stop.\n\nAfter the chat, the
+    nurse passes by you, and the remarks of another doctor also make you feel harsh.\n\nYou
+    don\u2019t know what happened, the bedridden mother no longer cooperates with
+    the treatment. \n\nAs a doctor\u2019s duty, you decide to find out what happened
+    and see if you can help the mother."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -74624,8 +74622,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
