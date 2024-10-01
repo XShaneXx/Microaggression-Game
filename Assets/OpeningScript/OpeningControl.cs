@@ -48,6 +48,10 @@ public class OpeningControl : MonoBehaviour
     private bool doctorMove1 = false;
     private bool doctorMove2 = false;
 
+    public GameObject startBlackScreen;
+    public GameObject text3;
+    public GameObject startPresskey;
+
     void Start()
     {
         dialogueNurseshow = false;
@@ -72,12 +76,15 @@ public class OpeningControl : MonoBehaviour
         }
 
         nurseAnimator.SetFloat("Horizontal", -1f);
+
+        // Start the fade-in coroutine for text3 and startPresskey
+        StartCoroutine(FadeInStartElements());
     }
 
     void Update()
     {
         // Check if player has reached the target position
-        if (!hasReachedTarget)
+        if (!startBlackScreen.activeInHierarchy && !hasReachedTarget)
         {
             MovePlayerToTarget();
         }
@@ -113,6 +120,45 @@ public class OpeningControl : MonoBehaviour
             StartCoroutine(ContinueDoctorMovement());
             doctorMove2 = true;
         }
+    }
+
+    IEnumerator FadeInStartElements()
+    {
+        text3.SetActive(true);
+        startPresskey.SetActive(true);
+
+        TextMeshProUGUI text3Component = text3.GetComponent<TextMeshProUGUI>();
+        Image startPresskeyImage = startPresskey.GetComponent<Image>();
+
+        Color text3Color = text3Component.color;
+        Color startPresskeyColor = startPresskeyImage.color;
+
+        text3Color.a = 0f;
+        startPresskeyColor.a = 0f;
+
+        text3Component.color = text3Color;
+        startPresskeyImage.color = startPresskeyColor;
+
+        float elapsedTime = 0f;
+        float duration = 3f;
+
+        // Fade in text3 and startPresskey
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+
+            text3Color.a = Mathf.Clamp01(elapsedTime / duration);
+            startPresskeyColor.a = Mathf.Clamp01(elapsedTime / duration);
+
+            text3Component.color = text3Color;
+            startPresskeyImage.color = startPresskeyColor;
+
+            yield return null;
+        }
+
+        yield return StartCoroutine(WaitForPlayerInput());
+
+        startBlackScreen.SetActive(false);
     }
 
     void MovePlayerToTarget()
@@ -165,8 +211,6 @@ public class OpeningControl : MonoBehaviour
             {
                 nurseReachedSecondTarget = true;
                 nurseAnimator.SetFloat("Speed", 0f);
-
-                // Now that the nurse has reached the second target, the doctor can start moving
             }
 
             yield return null;
