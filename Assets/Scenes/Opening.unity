@@ -6763,19 +6763,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 41232288}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.12965025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1776145858}
-  m_Father: {fileID: 362546410}
+  m_Father: {fileID: 783054562}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -375}
-  m_SizeDelta: {x: 0, y: -750}
+  m_AnchoredPosition: {x: 963.5292, y: 160.9455}
+  m_SizeDelta: {x: 1920, y: 330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &41232290
 MonoBehaviour:
@@ -6790,6 +6790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1776145859}
+  myDialoguebox: {fileID: 0}
   lines:
   - (Reading a hospital policy manual)
   - 'Introduction to DEI:'
@@ -7256,6 +7257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1875896995}
+  myDialoguebox: {fileID: 0}
   lines:
   - The time doesn't seem running in here.
   textSpeed: 0.05
@@ -7410,18 +7412,18 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97537220}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.12965025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 341786019}
-  m_Father: {fileID: 362546410}
+  m_Father: {fileID: 783054562}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -375}
-  m_SizeDelta: {x: 0, y: -750}
+  m_AnchoredPosition: {x: 963.5292, y: 160.9455}
+  m_SizeDelta: {x: 1920, y: 330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &97537225
 MonoBehaviour:
@@ -7436,6 +7438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 341786017}
+  myDialoguebox: {fileID: 0}
   lines:
   - I don't need to use the computer right now.
   - Oh wait! I could use the computer to translate.
@@ -7764,6 +7767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1582683808}
+  myDialoguebox: {fileID: 0}
   lines:
   - I always thought this thing was scary when I was in school.
   textSpeed: 0.05
@@ -9447,6 +9451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 615923830}
+  myDialoguebox: {fileID: 0}
   lines:
   - Going through all the patient files isn't helpful right now.
   textSpeed: 0.05
@@ -11834,16 +11839,7 @@ RectTransform:
   m_Children:
   - {fileID: 1144152573}
   - {fileID: 2112691914}
-  - {fileID: 2066433348}
-  - {fileID: 2069440945}
   - {fileID: 2034546394}
-  - {fileID: 1382235146}
-  - {fileID: 41232289}
-  - {fileID: 1315294707}
-  - {fileID: 1660657002}
-  - {fileID: 427497506}
-  - {fileID: 97537224}
-  - {fileID: 1621431512}
   - {fileID: 783054562}
   - {fileID: 171874168}
   - {fileID: 145295527}
@@ -12508,19 +12504,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427497505}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.12965025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1083367841}
-  m_Father: {fileID: 362546410}
+  m_Father: {fileID: 783054562}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -375}
-  m_SizeDelta: {x: 0, y: -750}
+  m_AnchoredPosition: {x: 963.5292, y: 160.9455}
+  m_SizeDelta: {x: 1920, y: 330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &427497507
 MonoBehaviour:
@@ -12535,6 +12531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1083367842}
+  myDialoguebox: {fileID: 0}
   lines:
   - "(A pile of notes, with the hospital cultural liaison\u2019s contact number at
     the bottom)"
@@ -15619,6 +15616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1947077111}
+  myDialoguebox: {fileID: 0}
   lines:
   - '[Dr.James] Still got a lots of work to be finish..'
   - '[Dr.James] A cup of coffee might be helpful..'
@@ -15719,6 +15717,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1091188575}
+  myDialoguebox: {fileID: 0}
   lines:
   - A soda-selling vending machine
   textSpeed: 0.05
@@ -18416,6 +18415,15 @@ Transform:
   - {fileID: 1213489280}
   - {fileID: 1657474866}
   - {fileID: 1145700448}
+  - {fileID: 2066433348}
+  - {fileID: 2069440945}
+  - {fileID: 1382235146}
+  - {fileID: 41232289}
+  - {fileID: 1315294707}
+  - {fileID: 1660657002}
+  - {fileID: 427497506}
+  - {fileID: 97537224}
+  - {fileID: 1621431512}
   m_Father: {fileID: 362546410}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -59793,6 +59801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 952768685}
+  myDialoguebox: {fileID: 0}
   lines:
   - A snack-selling vending machine
   textSpeed: 0.05
@@ -60865,6 +60874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1225163298}
+  myDialoguebox: {fileID: 0}
   lines:
   - A water-selling vending machine
   textSpeed: 0.05
@@ -61266,6 +61276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1144736193}
+  myDialoguebox: {fileID: 1144152572}
   lines:
   - '[Daughter] Oh, there is something I want to see if it would be helpful for my
     mom.'
@@ -61468,6 +61479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 147166436}
+  myDialoguebox: {fileID: 0}
   lines:
   - How was everything, Mary?
   - '[Mary] Great so far, anything you looking for?'
@@ -62085,6 +62097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1985903255}
+  myDialoguebox: {fileID: 0}
   lines:
   - '[Man] How long would I need to wait?'
   - Sorry, we are kind of busy this time.
@@ -62449,6 +62462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 915956057}
+  myDialoguebox: {fileID: 0}
   lines:
   - Not a good time to read a magazine.
   textSpeed: 0.05
@@ -63003,6 +63017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 714204395}
+  myDialoguebox: {fileID: 0}
   lines:
   - I've lost weight recently.
   textSpeed: 0.05
@@ -63094,19 +63109,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315294706}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.12965025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 238479059}
-  m_Father: {fileID: 362546410}
+  m_Father: {fileID: 783054562}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -375}
-  m_SizeDelta: {x: 0, y: -750}
+  m_AnchoredPosition: {x: 963.5292, y: 160.9455}
+  m_SizeDelta: {x: 1920, y: 330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1315294709
 MonoBehaviour:
@@ -63159,6 +63174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 238479060}
+  myDialoguebox: {fileID: 0}
   lines:
   - (A poster promoting DEI)
   - "\"In a truly inclusive environment, there\u2019s no place for microaggressions.\""
@@ -64038,19 +64054,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1382235145}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.12965025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2066412294}
-  m_Father: {fileID: 362546410}
+  m_Father: {fileID: 783054562}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -375}
-  m_SizeDelta: {x: 0, y: -750}
+  m_AnchoredPosition: {x: 963.5292, y: 160.9455}
+  m_SizeDelta: {x: 1920, y: 330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1382235147
 MonoBehaviour:
@@ -64065,6 +64081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2066412295}
+  myDialoguebox: {fileID: 0}
   lines:
   - (Mrs. Lee's Traditional Herbal Medicine)
   - (The ingredients of the medicine are written on the back of the medicine bottle)
@@ -66499,6 +66516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 486123095}
+  myDialoguebox: {fileID: 0}
   lines:
   - Sleep inside a dream...sounds like Inception
   textSpeed: 0.05
@@ -66790,21 +66808,21 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1621431511}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.12965025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1753526095}
   - {fileID: 554883695}
   - {fileID: 559234951}
-  m_Father: {fileID: 362546410}
+  m_Father: {fileID: 783054562}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -375}
-  m_SizeDelta: {x: 0, y: -750}
+  m_AnchoredPosition: {x: 963.5292, y: 160.9455}
+  m_SizeDelta: {x: 1920, y: 330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1621431514
 MonoBehaviour:
@@ -66857,6 +66875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1753526096}
+  myDialoguebox: {fileID: 0}
   lines:
   - The end of the stairway doesn't go to the next floor.
   - Seems like would be an exit of the dream.
@@ -67129,6 +67148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1156040818}
+  myDialoguebox: {fileID: 0}
   lines:
   - '[Nick] Got to organize these before I left.'
   - Thank you, Nick. Go home early when you are done.
@@ -67201,20 +67221,20 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1660657001}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.12965025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 135719319}
   - {fileID: 1700319460}
-  m_Father: {fileID: 362546410}
+  m_Father: {fileID: 783054562}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -375}
-  m_SizeDelta: {x: 0, y: -750}
+  m_AnchoredPosition: {x: 963.5292, y: 160.9455}
+  m_SizeDelta: {x: 1920, y: 330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1660657004
 MonoBehaviour:
@@ -67267,6 +67287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 135719320}
+  myDialoguebox: {fileID: 0}
   lines:
   - I don't need to make any calls right now.
   - The phone number is...
@@ -68852,6 +68873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 807648998}
+  myDialoguebox: {fileID: 0}
   lines:
   - The elevator doesn't seem to be working.
   textSpeed: 0.05
@@ -76234,19 +76256,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066433347}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.12965025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 98631255}
-  m_Father: {fileID: 362546410}
+  m_Father: {fileID: 783054562}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -375}
-  m_SizeDelta: {x: 0, y: -750}
+  m_AnchoredPosition: {x: 963.5292, y: 160.9455}
+  m_SizeDelta: {x: 1920, y: 330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2066433349
 MonoBehaviour:
@@ -76261,6 +76283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 98631256}
+  myDialoguebox: {fileID: 0}
   lines:
   - Mrs.Lee..Are you aright?
   - (Oh..right...I am dreaming...)
@@ -76467,21 +76490,21 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069440944}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.12965025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 558898766}
   - {fileID: 1492644733}
   - {fileID: 1330117425}
-  m_Father: {fileID: 362546410}
+  m_Father: {fileID: 783054562}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -375}
-  m_SizeDelta: {x: 0, y: -750}
+  m_AnchoredPosition: {x: 963.5292, y: 160.9455}
+  m_SizeDelta: {x: 1920, y: 330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2069440946
 MonoBehaviour:
@@ -76534,6 +76557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 558898767}
+  myDialoguebox: {fileID: 0}
   lines:
   - '[Mrs.Lee Daughter] What you guys did is so rude to my mom and me.'
   - '[Mrs.Lee Daughter] It is totally unthinkable that such a thing could happen
@@ -76734,6 +76758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 632461898}
+  myDialoguebox: {fileID: 2112691913}
   lines:
   - '[Doctor A] Hostipal are very busy.'
   - '[Doctor A] Asian patients are usually more compliant.'

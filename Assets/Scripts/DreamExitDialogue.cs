@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement; // Required to manage scene transitions
 public class DreamExitDialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
+    public GameObject myDialoguebox;
+    private bool isDialogueboxOpen;
     public string[] lines;
     public float textSpeed;
     public Button[] choiceButtons;
@@ -24,11 +26,18 @@ public class DreamExitDialogue : MonoBehaviour
     void Start()
     {
         ResetDialogue();
+        isDialogueboxOpen = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(myDialoguebox.activeInHierarchy && !isDialogueboxOpen)
+        {
+            StartDialogue();
+            isDialogueboxOpen = true;
+        }
+
         if ((Input.GetKeyDown(KeyCode.J) || Input.GetMouseButtonDown(0)) && !isChoicePoint && !isTyping)
         {
             if (textComponent.text == lines[index])
@@ -135,6 +144,7 @@ public class DreamExitDialogue : MonoBehaviour
         choiceMade = false;
         isTyping = false;
         textComponent.text = string.Empty;
+        isDialogueboxOpen = false;
         foreach (Button button in choiceButtons)
         {
             button.gameObject.SetActive(false);

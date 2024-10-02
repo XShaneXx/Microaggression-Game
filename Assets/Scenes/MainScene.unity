@@ -7272,6 +7272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1776145859}
+  myDialoguebox: {fileID: 41232288}
   lines:
   - (Reading a hospital policy manual)
   - 'Introduction to DEI:'
@@ -7605,6 +7606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1875896995}
+  myDialoguebox: {fileID: 54425281}
   lines:
   - '[Me] I''m off work at this time.'
   - '[Me] But I still need to help the mother before leaving get off work.'
@@ -7884,10 +7886,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 341786017}
+  myDialoguebox: {fileID: 97537220}
   lines:
   - '[Me] I don''t need to use the computer right now.'
   - '[Me] Oh wait! I could use the computer to translate.'
-  - (Using the computer camera, you input the medication ingredients list into computer)
+  - (Using the computer, you input the medication ingredients list into computer)
   - '[Me] The medication the mother is taking is correct and helps her condition.'
   - '[Me] I need to find Nurse A and talks about this.'
   textSpeed: 0.02
@@ -8348,6 +8351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1582683808}
+  myDialoguebox: {fileID: 113928986}
   lines:
   - '[Me] I always thought this thing was scary when I was in school.'
   textSpeed: 0.02
@@ -10067,6 +10071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 615923830}
+  myDialoguebox: {fileID: 181844570}
   lines:
   - '[Me] Going through all the patient files isn''t helpful right now.'
   textSpeed: 0.02
@@ -13157,6 +13162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1083367842}
+  myDialoguebox: {fileID: 427497505}
   lines:
   - "[My thoughts] A pile of notes, with the hospital cultural liaison\u2019s contact
     number at the bottom"
@@ -14930,6 +14936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1812207241}
+  myDialoguebox: {fileID: 545954791}
   lines:
   - '[Doctor A] Please don''t bother me, I still have a lot of things to do.'
   - '[Me] I need to talk you about the mother..'
@@ -16679,6 +16686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1947077111}
+  myDialoguebox: {fileID: 637571212}
   lines:
   - '[Doctor B] Still got a lots of work to be finish..'
   - '[Doctor B] A cup of coffee might be helpful..'
@@ -16780,6 +16788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1091188575}
+  myDialoguebox: {fileID: 638757854}
   lines:
   - '[Me] A soda-selling vending machine'
   textSpeed: 0.02
@@ -61249,6 +61258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 952768685}
+  myDialoguebox: {fileID: 992298095}
   lines:
   - '[Me] A snack-selling vending machine'
   textSpeed: 0.02
@@ -62454,6 +62464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1225163298}
+  myDialoguebox: {fileID: 1085778026}
   lines:
   - '[Me] A water-selling vending machine'
   textSpeed: 0.02
@@ -63184,6 +63195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1144736193}
+  myDialoguebox: {fileID: 1144152572}
   lines:
   - '[Me] If she doesn''t cooperate with the treatment, the situation will only get
     worse.'
@@ -63422,6 +63434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 147166436}
+  myDialoguebox: {fileID: 1145700447}
   lines:
   - '[Me] How was everything, Mary?'
   - '[Nurse D] Great so far, anything you looking for?'
@@ -64040,6 +64053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1985903255}
+  myDialoguebox: {fileID: 1213489279}
   lines:
   - '[Man] How long would I need to wait?'
   - '[Me] Sorry, we are kind of busy this time.'
@@ -64405,6 +64419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 915956057}
+  myDialoguebox: {fileID: 1270033968}
   lines:
   - '[Me] Not a good time to read a magazine.'
   textSpeed: 0.02
@@ -65288,6 +65303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 714204395}
+  myDialoguebox: {fileID: 1302270366}
   lines:
   - '[Me] I''ve lost weight recently.'
   textSpeed: 0.02
@@ -65446,6 +65462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 238479060}
+  myDialoguebox: {fileID: 1315294706}
   lines:
   - (A poster promoting DEI)
   - "\"In a truly inclusive environment, there\u2019s no place for microaggressions.\""
@@ -66623,6 +66640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2066412295}
+  myDialoguebox: {fileID: 1382235145}
   lines:
   - '[My thoughts] The Mother''s Traditional Herbal Medicine'
   - '[My thoughts] The ingredients of the medicine are written on the back of the
@@ -67797,6 +67815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1788243089}
+  myDialoguebox: {fileID: 1496988050}
   lines:
   - '[Nurse A] Why are some patients unwilling to follow medical advice and trust
     some unscience?'
@@ -69353,6 +69372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 486123095}
+  myDialoguebox: {fileID: 1613438256}
   lines:
   - '[Me] I shouldn''t be sleeping in a bed used by a sick person.'
   textSpeed: 0.02
@@ -69712,11 +69732,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1753526096}
+  myDialoguebox: {fileID: 1621431511}
   lines:
-  - You can leave the hospital from this side.
+  - '[Me] I can leave the hospital from this side.'
   - Do you want to leave the hospital?
-  - But I got to figure out how to help the Mom first.
-  - I got to find all the ways to help her.
+  - '[Me] But I got to figure out how to help the Mom first.'
+  - '[Me] I got to find all the ways to help her.'
   textSpeed: 0.02
   choiceButtons:
   - {fileID: 554883696}
@@ -69908,6 +69929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1156040818}
+  myDialoguebox: {fileID: 1657474865}
   lines:
   - '[Nurse C] Got to organize these before I left.'
   - '[Me] Thank you. Go home early when you are done.'
@@ -70048,16 +70070,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 135719320}
+  myDialoguebox: {fileID: 1660657001}
   lines:
   - '[Me] I don''t need to make any calls right now.'
   - '[Me] The phone number is...'
   - '[Me] Hi, I am calling from xxx hostipal.'
   - '[Me] I need to report something that happened today.'
   - '[Me] A colleague made inappropriate comments to a patient.'
-  - '[Voice from Phone] Thank you for bringing this to my attention, Alex.'
+  - '[Voice from Phone] Thank you for bringing this to my attention.'
   - '[Voice from Phone] Can you tell me exactly what was said and in what context?'
-  - '[Me] Patient mentioned their cultural treatment, and my colleague made a joke
-    seemed dismissive.'
+  - "[Me] Patient mentioned their cultural treatment, and my colleague\u2018s reply
+    seemed dismissive."
   - "[Me] The patient looked uncomfortable, and it didn\u2019t feel right."
   - '[Voice from Phone] I understand. That could be a microaggression'
   - "[Voice from Phone] Which can deeply impact a patient\u2019s experience and treatment."
@@ -72061,6 +72084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 807648998}
+  myDialoguebox: {fileID: 1784174519}
   lines:
   - '[Me] The hospital elevator is under maintenance recently.'
   textSpeed: 0.02
@@ -79648,6 +79672,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 98631256}
+  myDialoguebox: {fileID: 2066433347}
   lines:
   - '[Me] Are you aright?'
   - '[My thoughts] She didn''t reply. It seems that she doesn''t trust our medical
@@ -79923,6 +79948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 558898767}
+  myDialoguebox: {fileID: 2069440944}
   lines:
   - '[Daughter] What you guys did is so rude to my mom and me.'
   - '[Daughter] It is totally unthinkable that such a thing could happen in a hospital.'
