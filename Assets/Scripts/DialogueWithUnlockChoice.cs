@@ -32,23 +32,28 @@ public class DialogueWithUnlockChoice : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(myDialoguebox.activeInHierarchy && !isDialogueboxOpen)
+        if (myDialoguebox.activeInHierarchy && !isDialogueboxOpen)
         {
             StartDialogue();
             isDialogueboxOpen = true;
         }
 
-        if ((Input.GetKeyDown(KeyCode.J) || Input.GetMouseButtonDown(0)) && !isChoicePoint && !isTyping)
+        if (Input.GetKeyDown(KeyCode.J) || Input.GetMouseButtonDown(0))
         {
-            if (textComponent.text == lines[index])
+            if (isTyping)
             {
-                NextLine();
-            }
-            else
-            {
+                // Stop typing animation and immediately display the full line
                 StopAllCoroutines();
                 textComponent.text = lines[index];
                 isTyping = false;
+                CheckForChoicePoint(); // Check if this is a choice point immediately after displaying the full line
+            }
+            else if (!isChoicePoint)
+            {
+                if (textComponent.text == lines[index])
+                {
+                    NextLine();
+                }
             }
         }
     }

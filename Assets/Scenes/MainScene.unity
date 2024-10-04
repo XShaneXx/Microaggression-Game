@@ -63197,7 +63197,7 @@ MonoBehaviour:
   textComponent: {fileID: 1144736193}
   myDialoguebox: {fileID: 1144152572}
   lines:
-  - '[Me] If she doesn''t cooperate with the treatment, the situation will only get
+  - '[Me] If she doesn''t cooperate with the treatment, her situation will only get
     worse.'
   - '[Me] What happened?'
   - '[Me] Is it because of what the nurse and doctor said just now?'
@@ -70079,8 +70079,8 @@ MonoBehaviour:
   - '[Me] A colleague made inappropriate comments to a patient.'
   - '[Voice from Phone] Thank you for bringing this to my attention.'
   - '[Voice from Phone] Can you tell me exactly what was said and in what context?'
-  - "[Me] Patient mentioned their cultural treatment, and my colleague\u2018s reply
-    seemed dismissive."
+  - '[Me] Patient mentioned their cultural treatment...'
+  - "[Me] Then my colleague\u2018s reply seemed dismissive."
   - "[Me] The patient looked uncomfortable, and it didn\u2019t feel right."
   - '[Voice from Phone] I understand. That could be a microaggression'
   - "[Voice from Phone] Which can deeply impact a patient\u2019s experience and treatment."
