@@ -57,8 +57,14 @@ TagManager:
   - name: HosptialItem
     uniqueID: 1571585855
     locked: 0
+  - name: HosptialItemColor
+    uniqueID: 1877324661
+    locked: 0
   - name: HosptialItemm
     uniqueID: 4099681155
+    locked: 0
+  - name: HosptialItemmColor
+    uniqueID: 1938853333
     locked: 0
   - name: Others
     uniqueID: 1973513831
