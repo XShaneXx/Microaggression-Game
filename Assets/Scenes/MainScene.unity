@@ -19060,7 +19060,7 @@ MonoBehaviour:
   - '[Me] Also, what you just did violates what the hospital manual said.'
   - '[Me] This is a serious mistake for you as a doctor.'
   - '[Doctor A] Sorry..I didn''t mean to...'
-  - '[Doctor A]  It''s just that my mood is affected by too much work.'
+  - '[Doctor A] It''s just that my mood is affected by too much work.'
   - '[Me] I understand you, but you also have a responsibility to your patients.'
   - '[Me] Remember to explain it clearly to the mother so that your work can proceed
     better.'
@@ -67050,7 +67050,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Metion about \nDEI Poster"
+  m_text: "Mention about \nDEI Poster"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -70144,7 +70144,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Bring out the problem on Mrs. Lee\u2018s medication"
+  m_text: Bring out the problem on mother's medication
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -70938,7 +70938,7 @@ MonoBehaviour:
   textComponent: {fileID: 147166436}
   myDialoguebox: {fileID: 1145700447}
   lines:
-  - '[Me] How was everything, Mary?'
+  - '[Me] How was everything?'
   - '[Nurse D] Great so far, anything you looking for?'
   - '[Me] Yea...The Mother was discriminated against for using her traditional medicine..'
   - '[Nurse D] Oh...It is Nurse A? She always has issues with patients.'
@@ -80374,7 +80374,7 @@ MonoBehaviour:
   lines:
   - '[Me] I don''t need to make any calls right now.'
   - '[Me] The phone number is...'
-  - '[Me] Hi, I am calling from xxx hostipal.'
+  - '[Me] Hi, I am calling from xxx hospital.'
   - '[Me] I need to report something that happened today.'
   - '[Me] A colleague made inappropriate comments to a patient.'
   - '[Voice from Phone] Thank you for bringing this to my attention.'
@@ -92058,7 +92058,7 @@ MonoBehaviour:
   textComponent: {fileID: 98631256}
   myDialoguebox: {fileID: 2066433347}
   lines:
-  - '[Me] Are you aright?'
+  - '[Me] Are you alright?'
   - '[My thoughts] She didn''t reply. It seems that she doesn''t trust our medical
     staff.'
   - '[Me] I''m sorry that my colleague just made those remarks about you and your
