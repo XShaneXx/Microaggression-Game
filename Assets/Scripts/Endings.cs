@@ -50,6 +50,9 @@ public class Endings : MonoBehaviour
     public GameObject moreHintSEI2;
     private bool doneSEI1 = false;
 
+    public GameObject map;
+    private bool isMapOpen = false;
+
 
     void Start()
     {
@@ -83,6 +86,11 @@ public class Endings : MonoBehaviour
             endTime = Time.time;
             StartCoroutine(HandleAllEndingsComplete());
             SaveData();
+        }
+
+        if(Input.GetKeyDown(KeyCode.M))
+        {
+            ToggleMap();
         }
 
         // Solution MIV
@@ -133,6 +141,12 @@ public class Endings : MonoBehaviour
             moreHintSEI2.SetActive(true);
             doneSEI1 = true;
         }
+    }
+
+    private void ToggleMap()
+    {
+        isMapOpen = !isMapOpen;
+        map.SetActive(isMapOpen);
     }
 
     private IEnumerator HandleAllEndingsComplete()
