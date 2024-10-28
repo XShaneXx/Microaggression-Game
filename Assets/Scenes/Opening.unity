@@ -8477,8 +8477,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 603600127
-  m_SortingLayer: 3
+  m_SortingLayerID: 171924571
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: 73990540, guid: cda122ad21cb3e3468e7a11e65e51940, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -15463,8 +15463,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -155, y: 0}
-  m_SizeDelta: {x: 1200, y: 250}
+  m_AnchoredPosition: {x: -219.6958, y: 0}
+  m_SizeDelta: {x: 1329.3916, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &632461898
 MonoBehaviour:
@@ -15513,8 +15513,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -16866,8 +16866,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1973513831
-  m_SortingLayer: 8
+  m_SortingLayerID: 171924571
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: -361679186, guid: 0ab1fafb75b4b404c9a18833c149cc35, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -61356,8 +61356,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -61423,8 +61423,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -155, y: 0}
-  m_SizeDelta: {x: 1200, y: 250}
+  m_AnchoredPosition: {x: -219.6958, y: 0}
+  m_SizeDelta: {x: 1329.3916, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1145700447
 GameObject:
@@ -65726,6 +65726,7 @@ MonoBehaviour:
   startBlackScreen: {fileID: 470639371}
   text3: {fileID: 803580265}
   startPresskey: {fileID: 1850139506}
+  animationID: {fileID: 145295526}
 --- !u!4 &1576867656
 Transform:
   m_ObjectHideFlags: 0

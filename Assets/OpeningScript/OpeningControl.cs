@@ -51,6 +51,7 @@ public class OpeningControl : MonoBehaviour
     public GameObject startBlackScreen;
     public GameObject text3;
     public GameObject startPresskey;
+    public GameObject animationID;
 
     void Start()
     {
@@ -79,6 +80,9 @@ public class OpeningControl : MonoBehaviour
 
         // Start the fade-in coroutine for text3 and startPresskey
         StartCoroutine(FadeInStartElements());
+
+        // Start the flashing effect for animationID
+        StartCoroutine(FlashAnimationID());
     }
 
     void Update()
@@ -119,6 +123,15 @@ public class OpeningControl : MonoBehaviour
         {
             StartCoroutine(ContinueDoctorMovement());
             doctorMove2 = true;
+        }
+    }
+
+    IEnumerator FlashAnimationID()
+    {
+        while (true)
+        {
+            animationID.SetActive(!animationID.activeSelf); // Toggle the active state
+            yield return new WaitForSeconds(1f); // Wait for 1 second
         }
     }
 

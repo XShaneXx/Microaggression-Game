@@ -15,10 +15,16 @@ public class Player : MonoBehaviour
     private float udMoveIndex;
 
     public GameObject[] uiPanels;
+    public AudioSource walkingSound; // Reference to the walking sound AudioSource
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        if (walkingSound == null)
+        {
+            walkingSound = GetComponent<AudioSource>(); // Get the AudioSource component if not assigned in Inspector
+        }
     }
 
     void Update()
@@ -27,6 +33,7 @@ public class Player : MonoBehaviour
         {
             moveVelocity = Vector2.zero;
             animator.SetFloat("Speed", 0f);
+            StopWalkingSound();
             return;
         }
 
@@ -40,6 +47,11 @@ public class Player : MonoBehaviour
         {
             animator.SetFloat("Horizontal", lrMoveIndex);
             animator.SetFloat("Vertical", udMoveIndex);
+            PlayWalkingSound();
+        }
+        else
+        {
+            StopWalkingSound();
         }
 
         animator.SetFloat("Speed", moveVelocity.magnitude);
@@ -60,5 +72,23 @@ public class Player : MonoBehaviour
             }
         }
         return false;
+    }
+
+    // Method to play the walking sound
+    private void PlayWalkingSound()
+    {
+        if (!walkingSound.isPlaying)
+        {
+            walkingSound.Play();
+        }
+    }
+
+    // Method to stop the walking sound
+    private void StopWalkingSound()
+    {
+        if (walkingSound.isPlaying)
+        {
+            walkingSound.Stop();
+        }
     }
 }
