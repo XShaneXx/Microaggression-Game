@@ -7509,9 +7509,9 @@ MonoBehaviour:
   - Understanding the impact of microaggressions on patient care is crucial.
   - We aim to ensure that every patient interaction is free from bias and promotes
     healing.
-  - '[Me] According to the manual, Doctor A''s behavior to the mother is absolutely
-    unacceptable.'
-  - '[Me] I need to talks to Doctor A about this'
+  - '[Me] According to the manual, Dr. A''s recent behavior may not align with the
+    professional standards.'
+  - '[Me] It would be helpful to have a constructive conversation with Doctor A.'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -9132,8 +9132,8 @@ MonoBehaviour:
   lines:
   - '[Me] I don''t need to use the computer right now.'
   - '[Me] Oh wait! I could use the computer to translate.'
-  - (Using the computer, you input the medication ingredients list into computer)
-  - '[Me] The medication the mother is taking is correct and helps her condition.'
+  - (Using the computer, you input the medication ingredients list into computer.)
+  - '[Me] The ingredients in the medication the patient took did help her condition.'
   - '[Me] I need to find Nurse A and talks about this.'
   textSpeed: 0.02
   choiceButtons: []
@@ -16646,8 +16646,8 @@ MonoBehaviour:
   textComponent: {fileID: 1083367842}
   myDialoguebox: {fileID: 427497505}
   lines:
-  - "[My thoughts] A pile of notes, with the hospital cultural liaison\u2019s contact
-    number at the bottom"
+  - "(A pile of notes, with the hospital cultural liaison\u2019s contact number at
+    the bottom.)"
   - '[Me] This contact info is helpful.'
   - '[Me] I should get in contact with them before things get worse.'
   textSpeed: 0.02
@@ -18432,7 +18432,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: We are sorry, but what other said do out of our control.
+  m_text: We are sorry, but what others say is out of our control.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -19150,19 +19150,21 @@ MonoBehaviour:
   textComponent: {fileID: 1812207241}
   myDialoguebox: {fileID: 545954791}
   lines:
-  - '[Doctor A] Please don''t bother me, I still have a lot of things to do.'
-  - '[Me] I need to talk you about the mother..'
-  - '[Me] What you just said in front of the mother is horrible.'
-  - "[Me] I don\u2019t think it\u2019s fair to generalize patients based on their
-    ethnicity. "
-  - '[Me] Each patient is unique and we need to understand their individual concerns.'
-  - '[Me] Also, what you just did violates what the hospital manual said.'
-  - '[Me] This is a serious mistake for you as a doctor.'
-  - '[Doctor A] Sorry..I didn''t mean to...'
-  - '[Doctor A] It''s just that my mood is affected by too much work.'
-  - '[Me] I understand you, but you also have a responsibility to your patients.'
-  - '[Me] Remember to explain it clearly to the mother so that your work can proceed
-    better.'
+  - '[Doctor A] Please don''t bother me, I still have a lot of things to do.Please
+    don''t bother me, I still have a lot of things to do.'
+  - '[Me] I need to talk you about the patient...'
+  - '[Me] I just wanted to mention that comments made in the hallway can sometimes
+    impact how patients feel about our care.'
+  - "[Me] We\u2019re encouraged to approach each patient as an individual, which
+    can really help build trust."
+  - "[Me] And, as outlined in our guidelines, we aim to respect each person\u2019s
+    background and perspective."
+  - "[Doctor A] I didn\u2019t mean to\u2026 I\u2019m just feeling overwhelmed with
+    everything."
+  - "[Me] I completely understand\u2014it can be a lot. But even small adjustments
+    in how we communicate can make things easier."
+  - '[Me] Maybe a quick chat with the mother would clear things up and help her feel
+    more comfortable.'
   textSpeed: 0.02
   choiceButtons:
   - {fileID: 457384394}
@@ -70319,7 +70321,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bring out the problem on mother's medication
+  m_text: Bring out the problem on patient's medication
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -71115,10 +71117,11 @@ MonoBehaviour:
   lines:
   - '[Me] How was everything?'
   - '[Nurse D] Great so far, anything you looking for?'
-  - '[Me] Yea...The Mother was discriminated against for using her traditional medicine..'
-  - '[Nurse D] Oh...It is Nurse A? She always has issues with patients.'
-  - '[Me] Yea..I try to find her'
-  - '[Nurse D] okay...She really needs help on that..'
+  - '[Me] Yea...The patient has not cooperating with the treatment since this morning.'
+  - '[Nurse D] Oh... what is happening?'
+  - '[Me] There might be some communication issues between us and the patient. I
+    am trying to help her out right now.'
+  - '[Nurse D] I see... thanks for everything.'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -74328,10 +74331,11 @@ MonoBehaviour:
   - '"Commit to DEI. Stand up against microaggressions."'
   - '"Together, we can create a space where everyone feels valued, respected, and
     included."'
-  - '[Me] This poster is absolutely correct.'
-  - '[Me] What Nurse A just did was excessive and constituted microaggression.'
-  - '[Me] Which goes against the implementation of DEI.'
-  - '[Me] I need to talk to Nurse A about this.'
+  - '[Me] Any action or language can be offensive to others. Such behavior is defined
+    as microaggression.'
+  - "[Me] With that in mind, Nurse A\u2019s remarks may not have fully respected
+    the patient\u2019s perspective."
+  - '[Me] I should speak with Nurse A to provide some guidance on this.'
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -75835,12 +75839,11 @@ MonoBehaviour:
   textComponent: {fileID: 2066412295}
   myDialoguebox: {fileID: 1382235145}
   lines:
-  - '[My thoughts] The Mother''s Traditional Herbal Medicine'
-  - '[My thoughts] The ingredients of the medicine are written on the back of the
-    medicine bottle'
-  - '[My thoughts] But it''s in another language, you can''t understand it'
-  - (You took a photo of the ingredient list)
-  - '[Me] I must find a way to translate it so that it can help Mrs. Lee''s treatment.'
+  - (The patient's traditional herbal medicine.)
+  - (The ingredients of the medicine are written on the back of the medicine bottle.)
+  - (But it's in another language, I can't understand it.)
+  - (Took a photo of the ingredient list.)
+  - "[Me] I must find a way to translate it to see if that could help patient's\ttreatment."
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -77631,19 +77634,19 @@ MonoBehaviour:
   textComponent: {fileID: 1788243089}
   myDialoguebox: {fileID: 1496988050}
   lines:
-  - '[Nurse A] Why are some patients unwilling to follow medical advice and trust
-    some unscience?'
-  - '[Me] I need to talk to you..'
-  - '[Me] The medication the mother is taking is helping her.'
-  - '[Me] Your actions towards her are a serious violation of the DEI.'
-  - '[Me] Also, your words and attitude toward the patient were not right.'
-  - '[Me] This kind of disrespect for other''s culture is a manifestation of microaggression.'
-  - '[Nurse A] I..I am sorry..I just.I just..'
-  - '[Me] This can cause serious problems.'
-  - '[Me] Such as lack of trust in our work or lack of cooperation with our treatment
-    of her.'
-  - '[Nurse A] I..I got it..sorry...'
-  - '[Me] She deserves an apology from you.'
+  - '[Nurse A] Why are some patients always unwilling to follow medical advice?'
+  - '[Me] I need to talk to you...'
+  - '[Me] The medicine the patient is taking is helping her condition.'
+  - '[Me] When communicating with patients, you should try to think from the patient''s
+    perspective.'
+  - "[Me] Also, it\u2019s important to consider how our words and attitude might
+    affect patients."
+  - "[Me] Sometimes, unintentional comments can be perceived as microaggressions,
+    especially when they touch on someone\u2019s cultural background."
+  - "[Nurse A] I am so sorry\u2026 I didn\u2019t mean it that way\u2026"
+  - '[Me] Patients might feel less trust in us or be reluctant to follow our guidance.'
+  - "[Nurse A] I\u2026 I see that now\u2026"
+  - '[Me] It would mean a lot if you could give an apologize to her.'
   textSpeed: 0.02
   choiceButtons:
   - {fileID: 431087020}
@@ -80029,7 +80032,7 @@ MonoBehaviour:
   lines:
   - '[Me] I can leave the hospital from this side.'
   - Do you want to leave the hospital?
-  - '[Me] But I got to figure out how to help the Mom first.'
+  - '[Me] But I got to figure out how to help the patient first.'
   - '[Me] I got to find all the ways to help her.'
   textSpeed: 0.02
   choiceButtons:
@@ -80409,8 +80412,7 @@ MonoBehaviour:
   lines:
   - '[Nurse C] Got to organize these before I left.'
   - '[Me] Thank you. Go home early when you are done.'
-  - "[My thoughts] He was not the nurse who had just spoken rudely about the mother\u2019s
-    medication."
+  - He was not the nurse who just talked to the patient's daughter.
   textSpeed: 0.02
   choiceButtons: []
   choiceIndices: 
@@ -80550,24 +80552,23 @@ MonoBehaviour:
   lines:
   - '[Me] I don''t need to make any calls right now.'
   - '[Me] The phone number is...'
-  - '[Me] Hi, I am calling from xxx hospital.'
-  - '[Me] I need to report something that happened today.'
-  - '[Me] A colleague made inappropriate comments to a patient.'
+  - '[Me] Hi, I am calling from Happy Hospital.'
+  - '[Me] I want to report something that came up today.'
+  - '[Me] A colleague made an unusual comments to a patient.'
   - '[Voice from Phone] Thank you for bringing this to my attention.'
   - '[Voice from Phone] Can you tell me exactly what was said and in what context?'
-  - '[Me] Patient mentioned their cultural treatment...'
-  - "[Me] Then my colleague\u2018s reply seemed dismissive."
-  - "[Me] The patient looked uncomfortable, and it didn\u2019t feel right."
-  - '[Voice from Phone] I understand. That could be a microaggression'
+  - '[Me] Patient mentioned their cultural treatment they were considering...'
+  - "[Me] Then my colleague\u2019s response didn\u2019t seem very open to it."
+  - '[Me] The patient looked uncomfortable.'
+  - '[Voice from Phone] I understand. That could be a microaggression.'
   - "[Voice from Phone] Which can deeply impact a patient\u2019s experience and treatment."
   - "[Voice from Phone] We\u2019ll address this immediately."
-  - "[Voice from Phone] I\u2019ll talk to your colleague and ensure they get DEI
-    training."
+  - "[Voice from Phone] I\u2019ll talk to your colleague."
   - "[Voice from Phone] We\u2019ll also check in with the patient."
-  - '[Me] Thank you. I just want to make sure our environment is inclusive for everyone.'
-  - '[Voice from Phone] You did the right thing by reporting this.'
-  - "[Voice from Phone] Together, we\u2019ll keep our hospital a safe and supportive
-    place."
+  - '[Me] Thank you.'
+  - '[Voice from Phone] Thank you for bringing this up to our attention.'
+  - "[Voice from Phone] We\u2019ll work together to keep our hospital a positive
+    and inclusive space."
   textSpeed: 0.02
   choiceButtons:
   - {fileID: 1700319461}
@@ -92240,7 +92241,7 @@ MonoBehaviour:
   - '[Me] I''m sorry that my colleague just made those remarks about you and your
     daughter.'
   - '[Me] I will help you solve this problem, please trust me.'
-  - '[Me] Take some rest..'
+  - '[Me] Take some rest...'
   - '[My thoughts] I need to talk to that nurse and doctor.'
   textSpeed: 0.02
   choiceButtons: []
@@ -92510,11 +92511,11 @@ MonoBehaviour:
   textComponent: {fileID: 558898767}
   myDialoguebox: {fileID: 2069440944}
   lines:
-  - '[Daughter] What you guys did is so rude to my mom and me.'
+  - What you guys did is so rude to my mom and me.
   - '[Daughter] It is totally unthinkable that such a thing could happen in a hospital.'
-  - '[Nurse B] I am sorry to hear that, but I can''t do anything on that..'
-  - '[Daughter] Thank you, but you better do since this is a serious issue or I will..'
-  - '[Daughter] Okay, if that was the answer from all of you, I am going to..'
+  - '[Nurse B] I am sorry to hear that, but I can''t do anything on that...'
+  - '[Daughter] Thank you, but you better do since this is a serious issue or I will...'
+  - '[Daughter] Okay, if that was the answer from all of you, I am going to...'
   - '[Daughter] Report this matter to the relevant authorities.'
   textSpeed: 0.02
   choiceButtons:

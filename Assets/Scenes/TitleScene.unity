@@ -2050,12 +2050,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "As a doctor at xxx Hospital, you are patrolling the wards as usual. When
-    you pass a ward, the noisy conversation makes you stop.\n\nAfter the chat, the
-    nurse passes by you, and the remarks of another doctor also make you feel harsh.\n\nYou
-    don\u2019t know what happened, the bedridden mother no longer cooperates with
-    the treatment. \n\nAs a doctor\u2019s duty, you decide to find out what happened
-    and see if you can help the mother."
+  m_text: "As a doctor at Happy Hospital, you are doing your usual rounds in the
+    wards. When you pass one room, you hear a loud conversation that makes you pause.
+    \n\nSoon after, a nurse walks out, and another doctor nearby makes a comment
+    that feels upsetting.\r\n\nYou\u2019re not sure what happened, but the patient
+    in bed is now refusing treatment. As her doctor, you decide to find out what\u2019s
+    wrong and see if you can help her.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2082,8 +2082,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

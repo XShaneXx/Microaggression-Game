@@ -89177,15 +89177,16 @@ MonoBehaviour:
   myDialoguebox: {fileID: 2069440944}
   lines:
   - '[Nurse A] How many time I need to tell you?'
-  - '[Wife] But..At least...'
+  - '[Wife] But... At least...'
   - '[Nurse A] You want your husband to get better, right? '
   - '[Nurse A] Then just follow the nutritional guidelines that we gave you.'
-  - "[Nurse A] Those ancient cultural diets don\u2019t really help."
+  - "[Nurse A] Those old cultural diets don\u2019t really help."
   - '[Nurse A] Follow them will only make it harder for us to follow up on your husband''s
     condition.'
   - '[Nurse A] Even would making the condition worse.'
   - '[Wife] ......'
-  - '[Nurse A whispering] These ancient cultures always add to the burden of my work.'
+  - "[Nurse A whispering] Why do people always mention some old cultural \ttreatments?
+    This kind of stuff always burdens me."
   - (Things happen again, what would you do?)
   textSpeed: 0.02
   choiceButtons:

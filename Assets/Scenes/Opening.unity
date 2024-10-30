@@ -8844,6 +8844,7 @@ MonoBehaviour:
   - {fileID: 1213489279}
   - {fileID: 1657474865}
   - {fileID: 1145700447}
+  walkingSound: {fileID: 0}
 --- !u!95 &162738193
 Animator:
   serializedVersion: 5
@@ -60607,7 +60608,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Soon after, you learned that the mother's health condition had deteriorated
+  m_text: Soon after, you learned that the patient's health condition had deteriorated
     and she was not cooperating with the hospital's treatment. You decided to find
     out the reason and help her...
   m_isRightToLeft: 0
