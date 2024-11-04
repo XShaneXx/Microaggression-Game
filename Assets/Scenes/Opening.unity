@@ -6813,6 +6813,8 @@ MonoBehaviour:
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!114 &41232291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7264,6 +7266,8 @@ MonoBehaviour:
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!114 &54425284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7449,6 +7453,8 @@ MonoBehaviour:
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!1 &98631254
 GameObject:
   m_ObjectHideFlags: 0
@@ -7774,6 +7780,8 @@ MonoBehaviour:
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!114 &113928989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9459,6 +9467,8 @@ MonoBehaviour:
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!114 &181844573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12542,6 +12552,8 @@ MonoBehaviour:
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!114 &427497508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15627,6 +15639,8 @@ MonoBehaviour:
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!114 &637571215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15725,6 +15739,8 @@ MonoBehaviour:
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!114 &638757857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59809,6 +59825,8 @@ MonoBehaviour:
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!114 &992298098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60882,6 +60900,8 @@ MonoBehaviour:
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!114 &1085778029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61197,6 +61217,7 @@ GameObject:
   - component: {fileID: 1144152576}
   - component: {fileID: 1144152575}
   - component: {fileID: 1144152577}
+  - component: {fileID: 1144152578}
   m_Layer: 5
   m_Name: NurseD
   m_TagString: Untagged
@@ -61292,6 +61313,104 @@ MonoBehaviour:
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
+  audioSource: {fileID: 1144152578}
+  dialogueAdvanceSound: {fileID: 8300000, guid: 834fcbf03bd1e514e83bf983b5c0016e, type: 3}
+--- !u!82 &1144152578
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144152572}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 834fcbf03bd1e514e83bf983b5c0016e, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1144736192
 GameObject:
   m_ObjectHideFlags: 0
@@ -61492,6 +61611,8 @@ MonoBehaviour:
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!114 &1145700450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62107,6 +62228,8 @@ MonoBehaviour:
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!114 &1213489282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62470,6 +62593,8 @@ MonoBehaviour:
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!114 &1270033971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63025,6 +63150,8 @@ MonoBehaviour:
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!114 &1302270368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63195,6 +63322,8 @@ MonoBehaviour:
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!1 &1326918855
 GameObject:
   m_ObjectHideFlags: 0
@@ -64093,6 +64222,8 @@ MonoBehaviour:
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!114 &1382235148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66525,6 +66656,8 @@ MonoBehaviour:
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!114 &1613438259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66891,6 +67024,8 @@ MonoBehaviour:
   choiceIndices: 02000000
   targetIndex: 0
   dialoguePanel: {fileID: 1621431511}
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!1 &1653246017
 GameObject:
   m_ObjectHideFlags: 0
@@ -67159,6 +67294,8 @@ MonoBehaviour:
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!114 &1657474868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67316,6 +67453,8 @@ MonoBehaviour:
   - {fileID: 1700319461}
   choiceIndices: 01000000
   targetIndex: 3
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!1 &1674790168
 GameObject:
   m_ObjectHideFlags: 3
@@ -68882,6 +69021,8 @@ MonoBehaviour:
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!114 &1784174522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76298,6 +76439,8 @@ MonoBehaviour:
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!114 &2066433350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76576,6 +76719,8 @@ MonoBehaviour:
   - {fileID: 1330117426}
   choiceIndices: 02000000
   targetIndex: 5
+  audioSource: {fileID: 0}
+  dialogueAdvanceSound: {fileID: 0}
 --- !u!1 &2084922325
 GameObject:
   m_ObjectHideFlags: 0
@@ -76718,6 +76863,7 @@ GameObject:
   - component: {fileID: 2112691917}
   - component: {fileID: 2112691916}
   - component: {fileID: 2112691915}
+  - component: {fileID: 2112691918}
   m_Layer: 5
   m_Name: DoctorD
   m_TagString: Untagged
@@ -76769,6 +76915,8 @@ MonoBehaviour:
   choiceButtons: []
   choiceIndices: 
   targetIndex: 0
+  audioSource: {fileID: 2112691918}
+  dialogueAdvanceSound: {fileID: 8300000, guid: 834fcbf03bd1e514e83bf983b5c0016e, type: 3}
 --- !u!114 &2112691916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76807,6 +76955,102 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112691913}
   m_CullTransparentMesh: 1
+--- !u!82 &2112691918
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112691913}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 834fcbf03bd1e514e83bf983b5c0016e, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2119695785
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,14 +20,15 @@ public class Dialogue : MonoBehaviour
     private bool choiceMade; // Flag to indicate if a choice was made
     private bool isTyping; // Flag to indicate if text is being typed
 
-    // Start is called before the first frame update
+    public AudioSource audioSource; // Reference to the AudioSource component
+    public AudioClip dialogueAdvanceSound; // Sound effect for advancing dialogue
+
     void Start()
     {
         ResetDialogue();
         isDialogueboxOpen = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (myDialoguebox.activeInHierarchy && !isDialogueboxOpen)
@@ -40,11 +41,10 @@ public class Dialogue : MonoBehaviour
         {
             if (isTyping)
             {
-                // Stop typing animation and immediately display the full line
                 StopAllCoroutines();
                 textComponent.text = lines[index];
                 isTyping = false;
-                CheckForChoicePoint(); // Check if this is a choice point immediately after displaying the full line
+                CheckForChoicePoint();
             }
             else if (!isChoicePoint)
             {
@@ -69,7 +69,7 @@ public class Dialogue : MonoBehaviour
     IEnumerator TypeLine()
     {
         isTyping = true;
-        textComponent.text = string.Empty; // Ensure text is cleared before typing
+        textComponent.text = string.Empty;
         foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;
@@ -85,19 +85,26 @@ public class Dialogue : MonoBehaviour
         {
             if (choiceMade)
             {
-                index = targetIndex; // Use the public integer here
+                index = targetIndex;
                 choiceMade = false;
             }
             else
             {
                 index++;
             }
+
+            // Play the dialogue advance sound
+            if (audioSource != null && dialogueAdvanceSound != null)
+            {
+                audioSource.PlayOneShot(dialogueAdvanceSound);
+            }
+
             StartCoroutine(TypeLine());
         }
         else
         {
             gameObject.SetActive(false);
-            ResetDialogue(); // Reset dialogue after it finishes
+            ResetDialogue();
         }
     }
 
@@ -125,13 +132,10 @@ public class Dialogue : MonoBehaviour
             button.gameObject.SetActive(false);
         }
 
-        // Adjust the dialogue index based on player choice
         index = choiceIndex;
         isChoicePoint = false;
         isTyping = false;
         StartCoroutine(TypeLine());
-
-        // Set the flag to indicate a choice was made
         choiceMade = true;
     }
 

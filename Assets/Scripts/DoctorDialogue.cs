@@ -20,6 +20,9 @@ public class DoctorDialogue : MonoBehaviour
     private bool choiceMade; // Flag to indicate if a choice was made
     private bool isTyping; // Flag to indicate if text is being typed
 
+    public AudioSource audioSource;
+    public AudioClip dialogueAdvanceSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -103,6 +106,13 @@ public class DoctorDialogue : MonoBehaviour
             {
                 index++;
             }
+
+            // Play the dialogue advance sound
+            if (audioSource != null && dialogueAdvanceSound != null)
+            {
+                audioSource.PlayOneShot(dialogueAdvanceSound);
+            }
+
             StartCoroutine(TypeLine());
         }
         else

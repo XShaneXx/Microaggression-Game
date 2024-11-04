@@ -22,6 +22,9 @@ public class DreamExitDialogue : MonoBehaviour
     private bool isTyping; // Flag to indicate if text is being typed
     public GameObject dialoguePanel;
 
+    public AudioSource audioSource;
+    public AudioClip dialogueAdvanceSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -94,6 +97,13 @@ public class DreamExitDialogue : MonoBehaviour
             {
                 index++;
             }
+                        
+            // Play the dialogue advance sound
+            if (audioSource != null && dialogueAdvanceSound != null)
+            {
+                audioSource.PlayOneShot(dialogueAdvanceSound);
+            }
+
             StartCoroutine(TypeLine());
         }
         else
