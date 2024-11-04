@@ -28,27 +28,35 @@ public class Endings : MonoBehaviour
     private string[] solutionsArray = new string[4]; // Array to track the solution progress
 
     public TextMeshProUGUI solutionsMIVText;
-    public TextMeshProUGUI MIVProgressionText;
     public GameObject moreHintMIV1;
     public GameObject moreHintMIV2;
     public GameObject moreHintMIV3;
     private bool doneMIV1 = false;
     private bool doneMIV2 = false;
+    public GameObject MIVProgressBar1;
+    public GameObject MIVProgressBar2;
+    public GameObject MIVProgressBar3;
+
     public TextMeshProUGUI solutionsEOText;
-    public TextMeshProUGUI EOProgressionText;
     public GameObject moreHintEO1;
     public GameObject moreHintEO2;
     private bool doneEO1 = false;
+    public GameObject EOProgressBar1;
+    public GameObject EOProgressBar2;
+
     public TextMeshProUGUI solutionsDMText;
-    public TextMeshProUGUI DMProgressionText;
     public GameObject moreHintDM1;
     public GameObject moreHintDM2;
     private bool doneDM1 = false;
+    public GameObject DMProgressBar1;
+    public GameObject DMProgressBar2;
+
     public TextMeshProUGUI solutionsSEIText;
-    public TextMeshProUGUI SEIProgressionText;
     public GameObject moreHintSEI1;
     public GameObject moreHintSEI2;
     private bool doneSEI1 = false;
+    public GameObject SEIProgressBar1;
+    public GameObject SEIProgressBar2;
 
     public GameObject map;
     private bool isMapOpen = false;
@@ -97,7 +105,7 @@ public class Endings : MonoBehaviour
         if(StorylineState.hasCheckedMedicalBottle && !doneMIV1)
         {
             solutionsMIVText.text = "- Solution 1: Find a way to translate the bottle";
-            MIVProgressionText.text = "Solution Progression 1/3";
+            MIVProgressBar1.GetComponent<RawImage>().color = Color.green;
             moreHintMIV1.SetActive(false);
             moreHintMIV2.SetActive(true);
             doneMIV1 = true;
@@ -106,7 +114,7 @@ public class Endings : MonoBehaviour
         if(StorylineState.hasTranslatedMedicalBottle && !doneMIV2)
         {
             solutionsMIVText.text = "- Solution 1: Find Nurse A to talk about it";
-            MIVProgressionText.text = "Solution Progression 2/3";
+            MIVProgressBar2.GetComponent<RawImage>().color = Color.green;
             moreHintMIV2.SetActive(false);
             moreHintMIV3.SetActive(true);
             doneMIV2 = true;
@@ -116,7 +124,7 @@ public class Endings : MonoBehaviour
         if(StorylineState.hasCheckedDEIPoster && !doneEO1)
         {
             solutionsEOText.text = "- Solution 2: Find Nurse A to talk about it";
-            EOProgressionText.text = "Solution Progression 1/2";
+            EOProgressBar1.GetComponent<RawImage>().color = Color.green;
             moreHintEO1.SetActive(false);
             moreHintEO2.SetActive(true);
             doneEO1 = true;
@@ -126,7 +134,7 @@ public class Endings : MonoBehaviour
         if(StorylineState.hasCheckedManual && !doneDM1)
         {
             solutionsDMText.text = "- Solution 3: Find Doctor A to talk about it";
-            DMProgressionText.text = "Solution Progression 1/2";
+            DMProgressBar1.GetComponent<RawImage>().color = Color.green;
             moreHintDM1.SetActive(false);
             moreHintDM2.SetActive(true);
             doneDM1 = true;
@@ -136,7 +144,7 @@ public class Endings : MonoBehaviour
         if(StorylineState.hasCheckedNote && !doneSEI1)
         {
             solutionsSEIText.text = "- Solution 4: Find a way to call the number";
-            SEIProgressionText.text = "Solution Progression 1/2";
+            SEIProgressBar1.GetComponent<RawImage>().color = Color.green;
             moreHintSEI1.SetActive(false);
             moreHintSEI2.SetActive(true);
             doneSEI1 = true;
@@ -183,7 +191,7 @@ public class Endings : MonoBehaviour
 
             // Update the goals
             solutionsMIVText.text = "- Solution Done: Make the \"Invisible\" Visible";
-            MIVProgressionText.text = "Solution Progression 3/3";
+            MIVProgressBar3.GetComponent<RawImage>().color = Color.green;
             moreHintMIV1.SetActive(false);
             moreHintMIV2.SetActive(false);
             moreHintMIV3.SetActive(false);
@@ -206,7 +214,7 @@ public class Endings : MonoBehaviour
 
             // Update the goals
             solutionsEOText.text = "- Solution Done: Educate the Offender";
-            EOProgressionText.text = "Solution Progression 2/2";
+            EOProgressBar2.GetComponent<RawImage>().color = Color.green;
             moreHintEO1.SetActive(false);
             moreHintEO2.SetActive(false);
         }
@@ -228,7 +236,7 @@ public class Endings : MonoBehaviour
 
             // Update the goals
             solutionsDMText.text = "- Solution Done: Disarm the Microaggression";
-            DMProgressionText.text = "Solution Progression 2/2";
+            DMProgressBar2.GetComponent<RawImage>().color = Color.green;
             moreHintDM1.SetActive(false);
             moreHintDM2.SetActive(false);
         }
@@ -250,7 +258,7 @@ public class Endings : MonoBehaviour
 
             // Update the goals
             solutionsSEIText.text = "- Solution Done: Seek External Intervention";
-            SEIProgressionText.text = "Solution Progression 2/2";
+            SEIProgressBar2.GetComponent<RawImage>().color = Color.green;
             moreHintSEI1.SetActive(false);
             moreHintSEI2.SetActive(false);
         }
