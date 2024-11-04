@@ -12989,6 +12989,7 @@ GameObject:
   - component: {fileID: 215328575}
   - component: {fileID: 215328574}
   - component: {fileID: 215328573}
+  - component: {fileID: 215328577}
   - component: {fileID: 215328576}
   m_Layer: 0
   m_Name: Mom_head
@@ -13214,6 +13215,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 2066433347}
+--- !u!114 &215328577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215328569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa986309c5957644a078df276cd4bf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startColor: {r: 1, g: 1, b: 1, a: 1}
+  targetColor: {r: 0, g: 1, b: 0, a: 1}
+  colorChangeSpeed: 2
 --- !u!1 &225226855
 GameObject:
   m_ObjectHideFlags: 0
@@ -79708,7 +79724,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1496957097}
   - component: {fileID: 1496957099}
+  - component: {fileID: 1496957100}
   - component: {fileID: 1496957098}
+  - component: {fileID: 1496957101}
   m_Layer: 0
   m_Name: Daughter
   m_TagString: Untagged
@@ -79803,6 +79821,66 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1496957100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496957096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa986309c5957644a078df276cd4bf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startColor: {r: 1, g: 1, b: 1, a: 1}
+  targetColor: {r: 0, g: 1, b: 0, a: 1}
+  colorChangeSpeed: 2
+--- !u!61 &1496957101
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496957096}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.024602652, y: 0.2214235}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2.0001953}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0984106, y: 2.602959}
+  m_EdgeRadius: 0
 --- !u!1 &1496988050
 GameObject:
   m_ObjectHideFlags: 0
@@ -86833,6 +86911,7 @@ GameObject:
   - component: {fileID: 1807662207}
   - component: {fileID: 1807662206}
   - component: {fileID: 1807662205}
+  - component: {fileID: 1807662212}
   - component: {fileID: 1807662209}
   - component: {fileID: 1807662210}
   - component: {fileID: 1807662211}
@@ -87060,6 +87139,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1807662212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807662204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa986309c5957644a078df276cd4bf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startColor: {r: 1, g: 1, b: 1, a: 1}
+  targetColor: {r: 0, g: 1, b: 0, a: 1}
+  colorChangeSpeed: 2
 --- !u!1 &1812207240
 GameObject:
   m_ObjectHideFlags: 0
